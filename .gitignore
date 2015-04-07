@@ -1,0 +1,6 @@
+#Ignore Eclipse folder
+.settings/
+
+#Ignore Eclipse project files
+*.project
+*.classpath
