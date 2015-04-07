@@ -36,6 +36,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--- This should placed first off all other scripts -->
+        
+        <!--  ?php $this->registerCssFile('home/css/style.css');? -->
 
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 
@@ -46,6 +48,18 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/respond.js"></script>
         <![endif]-->
+        
+        <style type="text/css">
+        
+        .centered {
+    		float: none;
+    		margin-left: auto;
+    		margin-right: auto;
+    		display: block;
+		}
+        
+        </style>
+                
     </head>
     <body>
     <?php $this->beginBody() ?>
@@ -118,7 +132,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 <nav>
                                     <ul class="navigation">
                                         <li>
-                                            <a href="home-version1.html">
+                                            <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/index">
                                                 <span class="label-nav">
                                                     Home
                                                 </span>

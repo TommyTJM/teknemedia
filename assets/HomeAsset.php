@@ -19,19 +19,19 @@ class HomeAsset extends AssetBundle
     public $baseUrl = '@web';
     public $cssOptions = ['position' => \yii\web\View::POS_HEAD];
     public $css = [
-    	'/home/css/style.css',
-    	'/home/css/responsive.css',    		
-    	'/home/css/skins/light-blue.css',
+    	'home/css/style.css',
+    	'home/css/responsive.css',    		
+    	'home/css/skins/light-blue.css',
         'home/css/site.css',
     	'home/css/revolution_settings.css',
-    	'home/css/bootstrap.css',
     	'home/css/font-awesome.css',
     	'home/css/axfont.css',
     	'home/css/tipsy.css',
     	'home/css/prettyPhoto.css',
     	'home/css/isotop_animation.css',
     	'home/css/animate.css',
-    	'css/color-chooser.css'    		
+    	'home/css/color-chooser.css',
+    	'home/css/bootstrap.css',    		
     ];
     public $jsOptions = ['position' => \yii\web\View::POS_END];
     public $js = [
@@ -61,10 +61,8 @@ class HomeAsset extends AssetBundle
     	'home/js/kanzi.js',
     	'home/js/retina.js'    		
     ];
-    /*
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        //'yii\web\YiiAsset',
+        //'yii\bootstrap\BootstrapAsset',
     ];
-    */
 }
