@@ -18,24 +18,38 @@ class HomeAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $cssOptions = ['position' => \yii\web\View::POS_HEAD];
-    public $css = [
-    	'home/css/style.css',
-    	'home/css/responsive.css',    		
-    	'home/css/skins/light-blue.css',
-        'home/css/site.css',
-    	'home/css/revolution_settings.css',
+    public $css = [   		    	    		
+		'home/css/revolution_settings.css', 
+    	'home/css/bootstrap.css',
     	'home/css/font-awesome.css',
-    	'home/css/axfont.css',
+    	'home/css/axfont.css',    		
     	'home/css/tipsy.css',
-    	'home/css/prettyPhoto.css',
+    	'home/css/prettyPhoto.css', 
     	'home/css/isotop_animation.css',
-    	'home/css/animate.css',
-    	'home/css/color-chooser.css',
-    	'home/css/bootstrap.css',    		
+    	'home/css/animate.css', 
+    	'home/css/style.css',
+		'home/css/responsive.css',
+    	'home/css/color-chooser.css'
+    		
+    	/*
+        <link rel="stylesheet" href="css/revolution_settings.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/axfont.css">
+        <link rel="stylesheet" href="css/tipsy.css">
+        <link rel="stylesheet" href="css/prettyPhoto.css">
+        <link rel="stylesheet" href="css/isotop_animation.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+        <link href='css/style.css' rel='stylesheet' type='text/css'> 
+        <link href='css/responsive.css' rel='stylesheet' type='text/css'>
+
+        <link href="css/skins/light-blue.css" rel='stylesheet' type='text/css' id="skin-file">
+        */    		
     ];
     public $jsOptions = ['position' => \yii\web\View::POS_END];
     public $js = [
-    	'home/js/site.css',
+    	//'home/js/site.css',
     	'home/js/_jq.js',    		
     	'home/js/_jquery.placeholder.js',
     	'home/js/activeaxon_menu.js',

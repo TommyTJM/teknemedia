@@ -9,6 +9,8 @@ $hmBundle = HomeAsset::register($this);
 
 $imgLoc = $hmBundle->baseUrl.'/home/';
 
+/*TODO: Remove this comment*/
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -36,7 +38,9 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--- This should placed first off all other scripts -->              
+        <!--- This should placed first off all other scripts -->
+        
+        <link href="/teknetmediabeta/web/home/css/skins/light-blue.css" rel='stylesheet' type='text/css' id="skin-file">                      
 
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 
@@ -47,7 +51,6 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/respond.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="css/color-chooser.css">
     </head>
     <body>
     <?php $this->beginBody() ?>
@@ -60,22 +63,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                 <div class="top-bar">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-7">
-                                <div class="call-us top-bar-block">
-                                    <!-- i class="icon-phone"></i -->
-                                    <span>
-                                        <!-- Call us at 1- 888 - 999  -->
-                                    </span>
-                                </div>
-                                <div class="mail-us top-bar-block">
-                                    <!-- i class="icon-email"></i-->                            
-                                    <span>
-                                        <!-- E-mail: info@example.com -->
-                                    </span>                            
-                                </div>
-
-                            </div>
-                            <div class="col-sm-5">
+                            <div class="col-sm-10">
 
                                 <!-- Search Box -->
                                 <div class="searchbox">
@@ -109,6 +97,21 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                                 </div>
                             </div>
+                            <div class="col-sm-2">
+                                <div class="call-us top-bar-block">
+                                    <!-- i class="icon-phone"></i -->
+                                    <span>
+                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/register">Sign Up </a>
+                                    </span>
+                                </div>
+                                <div class="mail-us top-bar-block">
+                                    <!-- i class="icon-email"></i-->                            
+                                    <span>
+                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/login">Login</a>
+                                    </span>                            
+                                </div>
+
+                            </div>                            
                         </div>
                     </div>
                 </div>
@@ -143,18 +146,19 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 <nav>
                                     <ul class="navigation">
                                         <li>
-                                            <a href="home-version1.html">
+                                            <a href="home-version1.html" class="activelink">
                                                 <span class="label-nav">
                                                     Home
                                                 </span>
                                             </a>                                          
                                         </li>
                                         <li>
-                                            <a href="about-us.html">
+                                            <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/about">
                                                 <span class="label-nav">
                                                     About Us
                                                 </span>
                                             </a>
+                                            <!-- 
                                             <ul>
 
                                                 <li>
@@ -165,6 +169,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                                 </li>
 
                                             </ul>
+                                             -->
                                         </li>
                                         <li>
                                             <a href="services.html">

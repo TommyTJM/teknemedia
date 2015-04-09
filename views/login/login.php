@@ -19,7 +19,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
-    <head>
+    <head>               
     <?php $this->head()?>
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -37,7 +37,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
         <!--- This should placed first off all other scripts -->
         
-        <!--  ?php $this->registerCssFile('home/css/style.css');? -->
+        <link href="/teknetmediabeta/web/home/css/skins/light-blue.css" rel='stylesheet' type='text/css' id="skin-file">      
 
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 
@@ -47,7 +47,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/respond.js"></script>
-        <![endif]-->
+        <![endif]-->        
         
         <style type="text/css">
         
@@ -59,6 +59,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 		}
         
         </style>
+        
+        <!--  ?php $this->registerCssFile(Yii::$app->request->baseUrl.'/home/css/skins/light-blue.css',['type'=>'text/css','id'=>'skin-file']);? -->        
                 
     </head>
     <body>
@@ -144,16 +146,16 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                                     About Us
                                                 </span>
                                             </a>
+                                            <!-- 
                                             <ul>
-
                                                 <li>
-                                                    <a href="sign-up.html">Sign Up </a>
+                                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/register">Sign Up </a>
                                                 </li>
                                                 <li>
-                                                    <a href="sign-in.html">Sign In</a>
+                                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/login">Sign In</a>
                                                 </li>
-
                                             </ul>
+                                             -->
                                         </li>
                                         <li>
                                             <a href="services.html">
@@ -278,6 +280,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                         <div class="form-group">
                                             <div class="col-sm-offset-3 col-sm-9">
                                                 <button type="submit" class="btn btn-block btn-primary">Sign In</button>
+                                                <button type="submit" class="btn btn-block btn-primary">Cancel</button>
                                             </div>
                                         </div>
 
