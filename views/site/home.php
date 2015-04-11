@@ -32,8 +32,10 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         <script type="text/javascript" src="js/ie-fixes.js"></script>
         <link rel="stylesheet" href="css/ie-fixes.css">
         <![endif]-->
+        
+        <link rel="icon" type="image/png" href="<?php echo $imgLoc;?>images/favicon.ico" sizes="32x32" />
 
-        <meta name="description" content="Teknetmedia Inc - Home">
+        <meta name="description" content="Teknetmedia Inc.">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

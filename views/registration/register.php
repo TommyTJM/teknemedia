@@ -23,14 +23,16 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
     <?php $this->head()?>
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <title>Kanzi HTML5 Template</title>
+        <title>Teknetmedia Inc - Signup</title>
 
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/ie-fixes.js"></script>
         <link rel="stylesheet" href="css/ie-fixes.css">
         <![endif]-->
+        
+        <link rel="icon" type="image/png" href="<?php echo $imgLoc;?>images/favicon.ico" sizes="32x32" />
 
-        <meta name="description" content="Kanzi HTML5 Template">
+        <meta name="description" content="Teknetmedia Inc.">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,7 +130,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             </a>                                           
                                         </li>
                                         <li>
-                                            <a href="about-us.html">
+                                            <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/about">
                                                 <span class="label-nav">
                                                     About Us
                                                 </span>

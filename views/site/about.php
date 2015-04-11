@@ -24,14 +24,15 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
     <?php $this->head()?>
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <title>Kanzi HTML5 Template</title>
+        <title>Teknetmedia Inc - About</title>
 
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/ie-fixes.js"></script>
         <link rel="stylesheet" href="css/ie-fixes.css">
         <![endif]-->
+        <link rel="icon" type="image/png" href="<?php echo $imgLoc;?>images/favicon.ico" sizes="32x32" />
 
-        <meta name="description" content="Kanzi HTML5 Template">
+        <meta name="description" content="Teknetmedia Inc.">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,14 +63,15 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                 <div class="top-bar">
                     <div class="container">
                         <div class="row">
+                        	<!--
                             <div class="col-sm-7">
                                 <div class="call-us top-bar-block">                                 
                                 </div>
                                 <div class="mail-us top-bar-block">                                                             
                                 </div>
-
                             </div>
-                            <div class="col-sm-5">
+                            -->
+                            <div class="col-sm-10">
 
                                 <!-- Search Box -->
                                 <div class="searchbox">
@@ -83,12 +85,29 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 <div class="social-icons">
                                     <ul>                                        
                                         <li>
+                                            <a href="#" target="_blank" class="social-media-icon facebook-icon" data-original-title="facebook">facebook</a>
+                                        </li>
+                                        <li>
                                             <a href="#" target="_blank" class="social-media-icon twitter-icon" data-original-title="twitter">twitter</a>
-                                        </li>                                       
+                                        </li>                                                                               
                                     </ul>
-
                                 </div>
                             </div>
+                            <div class="col-sm-2">
+                                <div class="call-us top-bar-block">
+                                    <!-- i class="icon-phone"></i -->
+                                    <span>
+                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/register">Sign Up </a>
+                                    </span>
+                                </div>
+                                <div class="mail-us top-bar-block">
+                                    <!-- i class="icon-email"></i-->                            
+                                    <span>
+                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/login">Login</a>
+                                    </span>                            
+                                </div>
+
+                            </div>                             
                         </div>
                     </div>
                 </div>
@@ -135,16 +154,18 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                                     About Us
                                                 </span>
                                             </a>
+                                            <!-- 
                                             <ul>
 
                                                 <li>
-                                                    <a href="sign-up.html">Sign Up </a>
+                                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/register">Sign Up </a>
                                                 </li>
                                                 <li>
-                                                    <a href="sign-in.html">Sign In</a>
+                                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/login">Sign In</a>
                                                 </li>
 
                                             </ul>
+                                             -->
                                         </li>
                                         <li>
                                             <a href="services.html">
