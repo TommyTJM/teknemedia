@@ -7,6 +7,7 @@ use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
+use app\models\RegisterForm;
 use app\models\ContactForm;
 
 class SiteController extends Controller
@@ -67,7 +68,7 @@ class SiteController extends Controller
     {
     	//return $this->render('index');
     
-    	$model=new LoginForm();
+    	$model=new RegisterForm();
     	return $this->renderPartial('/registration/register',array('model'=>$model));
     }    
 
@@ -114,6 +115,26 @@ class SiteController extends Controller
     {
         //return $this->render('about');
     	$model=new LoginForm();
+    	
+    	$loginUser = new TkntUsers();
+    	
+    	/*
+ * @property integer $user_id
+ * @property string $first_nm
+ * @property string $last_nm
+ * @property string $email
+ * @property string $password
+ * @property string $user_role
+ * @property string $user_created
+ * @property string $dt_created
+ * @property string $user_modified
+ * @property string $dt_modified
+    	 */
+    	
+    	$loginUser->user_id = '';
+    	$loginUser->user_id = '';
+    	$loginUser->save();
+    	
         return $this->renderPartial('about',array('model'=>$model));
     }
 }

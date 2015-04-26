@@ -103,13 +103,13 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 <div class="call-us top-bar-block">
                                     <!-- i class="icon-phone"></i -->
                                     <span>
-                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/register">Sign Up </a>
+                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=register/view">Sign Up </a>
                                     </span>
                                 </div>
                                 <div class="mail-us top-bar-block">
                                     <!-- i class="icon-email"></i-->                            
                                     <span>
-                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/login">Login</a>
+                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=login/view">Login</a>
                                     </span>                            
                                 </div>
 

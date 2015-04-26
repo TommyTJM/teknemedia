@@ -8,12 +8,12 @@ use yii\base\Model;
 /**
  * LoginForm is the model behind the login form.
  */
-class LoginForm extends Model
+class MainForm extends Model
 {
-    public $email;
-    public $password;
-    public $rememberMe = true;
-    public $welcomeMsg = 'Welcome Back!';
+    public $firstNm;
+    public $lastNm;
+    public $userId;
+    public $welcomeMsg;
 
     private $_user = false;
 
@@ -25,11 +25,7 @@ class LoginForm extends Model
     {
         return [
             // username and password are both required
-            [['email', 'password'], 'required'],
-            // rememberMe must be a boolean value
-            ['rememberMe', 'boolean'],
-            // password is validated by validatePassword()
-            ['password', 'validatePassword'],
+            [['firstNm', 'lastNm'], 'required'],
         ];
     }
 
@@ -45,8 +41,7 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
 
-            //if (!$user || !$user->validatePassword($this->password)) {
-            if (!$user) {
+            if (!$user || !$user->validatePassword($this->password)) {
                 $this->addError($attribute, 'Incorrect username or password.');
             }
         }
@@ -73,7 +68,7 @@ class LoginForm extends Model
     public function getUser()
     {
         if ($this->_user === false) {
-            $this->_user = TkntUsers::find()->where(['email'=>$this->email]);
+            $this->_user = TkntUsers::findOne($this->name);
         }
 
         return $this->_user;

@@ -8,7 +8,8 @@
 function animator() {
     var delay, speed;
     $('.animated').each(function() {
-        var el = $(this);
+        var el = $(this);        
+        
         //console.log( elements[i] , i );
         if (el.visible(true)) {
             if (el.data('animtype') == 'animate-progress') {

@@ -1,5 +1,7 @@
 <?php
 use app\assets\HomeAsset;
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
 $this->title = 'Teknet Media Inc';
@@ -7,6 +9,10 @@ $this->title = 'Teknet Media Inc';
 $hmBundle = HomeAsset::register($this);
 
 $imgLoc = $hmBundle->baseUrl.'/home/';
+
+$checkBxLbl = 'I Accept All The&nbsp;<a href="#" class="skin-text">Terms And Services</a>.';
+
+$btnCssStyle = 'width: 126px;';
 
 ?>
 <?php $this->beginPage() ?>
@@ -49,8 +55,17 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/respond.js"></script>
         <![endif]-->
+        
+        <!-- Override Boostrap Styles -->
+        <style type="text/css">
+        	.form-group {
+        		margin-bottom: 0px;
+        	}        	       	
+        </style>
+        
     </head>
-    <body>
+    <body>        
+    
     <?php $this->beginBody() ?>
 
 
@@ -212,20 +227,20 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                         </div>
                     </div>
                 </div>
-            </div><!--.top wrapper end -->
-
+            </div><!--.top wrapper end -->	                     
+             
             <div class="loading-container">
                 <div class="spinner">
                     <div class="double-bounce1"></div>
                     <div class="double-bounce2"></div>
                 </div>
-            </div>
-
+            </div>                       
 
             <div class="content-wrapper hide-until-loading"><div class="body-wrapper">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-12 col-sm-12 animated" data-animtype="flipInY"
+                        	<!-- div class="col-md-12 col-sm-12 animated" data-animtype="flipInY" -->
+                            <div class="col-md-12 col-sm-12" data-animtype="flipInY"
                                  data-animrepeat="0"
                                  data-speed="1s"
                                  data-delay="0.5s">
@@ -245,56 +260,88 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                             <div class="col-md-6 col-sm-6 centered">
                                 <div class="classic-form">
-                                    <form class="form-horizontal" role="form" novalidate>
+                                
+                                	<!-- Begin Regisration Form -->                                	
+                                     
+									 <?php
+									 $form = ActiveForm::begin([
+											'id' => 'RegistrationForm',
+											'action'=>'index.php?r=register/save',
+											'options'=> ['method' =>'post',
+													     'class'=>'form-horizontal',
+													     'role'=>'form'],
+											'validateOnSubmit'=>false,
+											]) 
+									?>	                                    
+                                    
                                         <div class="form-group">
                                             <label for="name" class="col-sm-3 control-label">Name</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                            <div class="col-sm-9">                                           
+	                                            <?= $form->field($model, 'name',['inputOptions'=>['class'=>'form-control',
+	                                            						                              'id'=>'name',
+	                                            						                              'placeholder'=>'Enter Name',
+	                                            						                              'type'=>'text'
+	                                            													  ]])->label(false)?>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="email" class="col-sm-3 control-label">Email</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+	                                            <?= $form->field($model, 'email',['inputOptions'=>['class'=>'form-control',
+	                                            						                              'id'=>'name',
+	                                            						                              'placeholder'=>'Enter Email',
+	                                            						                              'type'=>'text'
+	                                            													  ]])->input('email')->label(false)?>                                                
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="password" class="col-sm-3 control-label">Password</label>
                                             <div class="col-sm-9">
-                                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+	                                            <?= $form->field($model, 'password',['inputOptions'=>['class'=>'form-control',
+	                                            						                              'id'=>'password',
+	                                            						                              'placeholder'=>'Enter Password',
+	                                            						                              'type'=>'password'
+	                                            													  ]])->passwordInput()->label(false)?>                                                 
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label for="rptpassword" class="col-sm-3 control-label">Repeat Password</label>
                                             <div class="col-sm-9">
-                                                <input type="password" class="form-control" id="rptpassword" placeholder="Repeat Password">
+	                                            <?= $form->field($model, 'rptpassword',['inputOptions'=>['class'=>'form-control',
+	                                            						                                 'id'=>'rptpassword',
+	                                            						                                 'placeholder'=>'Repeat Password',
+	                                            						                                 'type'=>'password'
+	                                            													     ]])->input('email')->label(false)?>                                                 
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-offset-3 col-sm-9">
                                                 <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox"> I Accept All The <a href="#" class="skin-text">Terms And Services</a>.
-
-                                                    </label>
+	                                            		<?= $form->field($model, 'acceptTerms')->checkbox(array('label'=>$checkBxLbl,
+	                                            						                                   	    'id'=>'acceptTermsChkBx',
+	                                            						                                   		'type'=>'checkbox'))?>                                          						                                   		                                                          
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-offset-3 col-sm-9">
-                                                <button type="submit" class="btn btn-block btn-primary">Sign Up</button>
-                                                <button type="submit" class="btn btn-block btn-primary">Cancel</button>
+                                                <?= Html::submitButton('Submit', ['class'=> 'btn btn-block btn-primary','style'=>$btnCssStyle]) ;?>                                                
+                                                <?= Html::submitButton('Cancel', ['class'=> 'btn btn-block btn-primary','style'=>$btnCssStyle]) ;?>
                                             </div>
                                         </div>
 
-                                    </form>                    
+									<!-- End Registration Form -->									                                        
+                                    
+						            <?php ActiveForm::end(); ?>                                                             
+                                                       
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
-            </div><!--.content-wrapper end -->
+            </div><!--.content-wrapper end -->                       
+            
             <footer>
                 <div class="footer">
 
