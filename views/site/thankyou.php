@@ -1,15 +1,15 @@
 <?php
 use yii\helpers\Html;
-use  yii\helpers\BaseHtml;
 use app\assets\HomeAsset;
 
-
 /* @var $this yii\web\View */
-$this->title = 'Teknet Media, Inc.';
+$this->title = 'Teknet Media Inc';
 
 $hmBundle = HomeAsset::register($this);
 
 $imgLoc = $hmBundle->baseUrl.'/home/';
+
+/*TODO: Remove this comment*/
 
 ?>
 <?php $this->beginPage() ?>
@@ -26,14 +26,16 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
     <?php $this->head()?>
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <title>Teknet Media, Inc. - Contact Us!</title>
+        <title>Teknet Media, Inc. - Home</title>
 
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/ie-fixes.js"></script>
         <link rel="stylesheet" href="css/ie-fixes.css">
         <![endif]-->
+        
+        <link rel="icon" type="image/png" href="<?php echo $imgLoc;?>images/favicon.ico" sizes="32x32" />
 
-        <meta name="description" content="Teknetmedia Inc - Contact Us!">
+        <meta name="description" content="Teknet Media, Inc.">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +56,6 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
     </head>
     <body>
     <?php $this->beginBody() ?>
-
 
 
         <div id="wrapper"  >
@@ -81,7 +82,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                         </li>
                                         <li>
                                             <a href="#" target="_blank" class="social-media-icon twitter-icon" data-original-title="twitter">twitter</a>
-                                        </li>                                     
+                                        </li>                                      
                                     </ul>
 
                                 </div>
@@ -113,7 +114,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                             <!-- Logo -->
                             <div class="col-xs-2 logo">
-                                <a href="home-version1.html">
+                               <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/about">
                                     <img src="<?php echo $imgLoc;?>images/main_logo.png" alt="Teknet Media, Inc."/>
                                 </a>
                             </div>
@@ -146,7 +147,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                                 <span class="label-nav">
                                                     About Us
                                                 </span>
-                                            </a>                                            
+                                            </a>                                          
                                         </li>
                                         <li>
                                              <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/services">
@@ -161,7 +162,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                                     Contact Us
                                                 </span>
                                             </a>         
-                                        </li>                                           
+                                        </li>
+                                           
                                     </ul>
 
                                 </nav>
@@ -188,6 +190,27 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                     </div>
                 </header>
                 <!-- //Header// -->
+                 <div class="top-title-wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="page-info">
+                                  
+                                    <!-- BreadCrumb -->
+                                    <div class="breadcrumb-container">
+                                        <ol class="breadcrumb">
+                                            <li>
+                                                <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/index">Home</a>
+                                            </li>
+                                            <li class="active">Thank You</li>
+                                        </ol>
+                                    </div>
+                                    <!-- BreadCrumb -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div><!--.top wrapper end -->
 
             <div class="loading-container">
@@ -196,121 +219,23 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                     <div class="double-bounce2"></div>
                 </div>
             </div>
-
-
-            <div class="content-wrapper hide-until-loading">
-      
-
-
-                <!-- Contact Map -->
-                <div class="body-wrapper">
+                  <div class="body-wrapper">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-8 col-sm-8">
-                                <div class="contact-body">
-                                    <h3 class="h3-body-title">
-                                        Leave A Message
-                                    </h3>
-                                    <p class="body_paragraph contact-paragraph">
-                                        Teknet Media prides itself on being responsive to customers, prospects, and partners. Please provide the details below and a knowledgeable representative will contact you shortly.
-                                    </p>
-                                    
-                                    <div class="form">
-							<?php echo Html::beginForm(); ?>
-							
-								<?php echo Html::errorSummary( $model ); ?>
-                                    
-                                    <form class="form-wrapper" id="contactform" method="post" role="form" novalidate>
+                            <div class="col-md-12 col-sm-12">
 
+                                <div class="not-found-404">                                    
+                                    <p>Thank you taking interest in us , we will contact you soon!</p>
 
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-xs-7">
-                                                    <label for="name">
-                                                         <?php echo Html::activeLabel($model,'name'); ?>
-                                                    </label>
-                                                         <?php echo Html::activeTextInput($model,'name', ['class' => 'form-control', 'placeholder' => 'Name']) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-xs-7">
-                                                    <label for="email">
-                                                         <?php echo Html::activeLabel($model,'email'); ?>
-                                                    </label>
-                                                        <?php echo Html::activeTextInput($model,'email', ['class' => 'form-control', 'placeholder' => 'Email']) ?>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-xs-7">
-                                                    <label for="message">
-                                                       <?php echo Html::activeLabel($model,'subject'); ?>
-                                                    </label>
-                                                       <?php echo Html::activeTextInput($model,'subject', ['class' => 'form-control', 'placeholder' => 'Subject']) ?>                                                                                                              
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-xs-8">
-                                                    <label for=message">
-                                                        <?php echo Html::activeLabel($model,'body'); ?>
-                                                    </label>                                                                                                        
-    											        <?php echo Html::activeTextarea($model,'body', ['class' => 'form-control', 'rows' => '5' ]) ?>    											   	                                                              
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-2 col-sm-2 offset2">
-                                                        <?php echo Html::submitButton('Submit', array('class'=>'btn btn-lg'))?>                                                
-                                            </div>
-                                        </div>
-
-                                   </form>
-                                   <?php echo Html::endForm(); ?>
-								</div><!-- form -->
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1">
-                                <div class="sidebar">
-
-
-                                    <div class="sidebar-block">
-                                        <h3 class="h3-sidebar-title">
-                                            Contact Us
-                                        </h3>
-                                        <div class="sidebar-icon-item">
-                                            <i class="icon-phone"></i> (+1) 777-444-333
-                                        </div>
-                                        <div class="sidebar-icon-item">
-                                            <i class="icon-email"></i>info@teknetmedia.com
-                                        </div>
-                                        <div class="sidebar-icon-item">
-                                            <i class="icon-home"></i> Jacksonville, Fl
-                                        </div>
-                                    </div>
-
-                                    <div class="sidebar-block">
-                                    </div>
-                                    <div class="sidebar-block">
-
-                                    </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><!--.content-wrapper end -->
-        <footer>
+                
+                
+                
+                  <footer>
                 <div class="footer">
 
                     <div class="container">
@@ -404,12 +329,10 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                     </div>
                 </div>
             </footer>
-                
-       </div><!-- wrapper end -->
-                
-        
-    <?php $this->endBody() ?> 
+
+        </div><!-- wrapper end -->
+        <?php $this->endBody() ?> 
     </body>
 </html>
-
 <?php $this->endPage() ?>
+                

@@ -26,7 +26,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
     <?php $this->head()?>
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <title>Teknetmedia Inc - Home</title>
+        <title>Teknet Media, Inc. - Home</title>
 
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/ie-fixes.js"></script>
@@ -35,7 +35,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         
         <link rel="icon" type="image/png" href="<?php echo $imgLoc;?>images/favicon.ico" sizes="32x32" />
 
-        <meta name="description" content="Teknetmedia Inc.">
+        <meta name="description" content="Teknet Media, Inc.">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +56,6 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
     </head>
     <body>
     <?php $this->beginBody() ?>
-
 
 
         <div id="wrapper"  >
@@ -83,18 +82,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                         </li>
                                         <li>
                                             <a href="#" target="_blank" class="social-media-icon twitter-icon" data-original-title="twitter">twitter</a>
-                                        </li>
-                                        <!-- 
-                                        <li>
-                                            <a href="#" target="_blank" class="social-media-icon googleplus-icon" data-original-title="googleplus">googleplus</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank" class="social-media-icon pininterest-icon" data-original-title="pininterest">pininterest</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank" class="social-media-icon dribble-icon" data-original-title="dribble">dribble</a>
-                                        </li>
-                                         -->
+                                        </li>                                      
                                     </ul>
 
                                 </div>
@@ -103,13 +91,13 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 <div class="call-us top-bar-block">
                                     <!-- i class="icon-phone"></i -->
                                     <span>
-                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=register/view">Sign Up </a>
+                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/register">Sign Up </a>
                                     </span>
                                 </div>
                                 <div class="mail-us top-bar-block">
                                     <!-- i class="icon-email"></i-->                            
                                     <span>
-                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=login/view">Login</a>
+                                        <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/login">Login</a>
                                     </span>                            
                                 </div>
 
@@ -126,8 +114,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                             <!-- Logo -->
                             <div class="col-xs-2 logo">
-                                <a href="home-version1.html">
-                                    <img src="<?php echo $imgLoc;?>images/main_logo.png" alt="Kanzi HTML5 Template"/>
+                               <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/about">
+                                    <img src="<?php echo $imgLoc;?>images/main_logo.png" alt="Teknet Media, Inc."/>
                                 </a>
                             </div>
                             <!-- //Logo// -->
@@ -148,7 +136,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 <nav>
                                     <ul class="navigation">
                                         <li>
-                                            <a href="home-version1.html" class="activelink">
+                                            <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/index" class="activelink">
                                                 <span class="label-nav">
                                                     Home
                                                 </span>
@@ -159,29 +147,17 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                                 <span class="label-nav">
                                                     About Us
                                                 </span>
-                                            </a>
-                                            <!-- 
-                                            <ul>
-
-                                                <li>
-                                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/register">Sign Up </a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/login">Sign In</a>
-                                                </li>
-
-                                            </ul>
-                                             -->
+                                            </a>                                          
                                         </li>
                                         <li>
-                                            <a href="services.html">
+                                             <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/services">
                                                 <span class="label-nav">
                                                     Services
                                                 </span>
                                             </a>         
                                         </li>
                                         <li>
-                                            <a href="contact.html">
+                                           <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/contact">
                                                 <span class="label-nav">
                                                     Contact Us
                                                 </span>
@@ -252,11 +228,11 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
 
                                 <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="200" data-start="1000" data-easing="easeOutBack" data-end="4500" data-endspeed="500">
-                                    We our leaders in logistics systems that meet your<br /> 
+                                    We our leaders in logistics systems, let us meet your<br /> 
                                     supply chain needs!
                                 </div>
                                 <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="280" data-start="1500" data-easing="easeOutBack" data-end="5000" data-endspeed="500">
-                                    <a href="#" class="button btn-flat">More Info</a>
+                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/about"class="button btn-flat">More Info</a>
                                 </div>                  
 
                             </li>
@@ -275,15 +251,15 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                      data-y="150"
                                      data-speed="300"
                                      data-start="800"
-                                     data-easing="easeOutCubic" data-end="6000" data-endspeed="500">IMS Innovation</div>
+                                     data-easing="easeOutCubic" data-end="6000" data-endspeed="500">WMS Innovation</div>
 
 
                                 <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="200" data-start="1000" data-easing="easeOutBack" data-end="4500" data-endspeed="500">
-                                    Our world class experience gives your systems the innovative<br />
-                                    edge! 
+                                    Our world class experience gives your Warehouse<br />
+                                    the innovative edge! 
                                 </div>
                                 <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="280" data-start="1500" data-easing="easeOutBack" data-end="5000" data-endspeed="500">
-                                    <a href="#" class="button btn-flat">More Info</a>
+                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/about" class="button btn-flat">More Info</a>
                                 </div>                
 
                             </li>
@@ -318,10 +294,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                         CRM Development
                                     </h4>
                                     <div class="content-box-text">
-                                        Cras sem erat, aliquet in egestas cursus, ullamcorper vitae
-                                        ligula. Nunc commodo lacinia eros ac condimentum
-
-                                        <div>
+									 Our CRM logistics solutions help service providers manage hundreds, if not thousands of customers,
+									 a large number of suppliers and support complex business processes for their customers.                                         <div>
                                             <a href="#" class=" btn btn-sm">
                                                 <span>read more</span>
                                             </a>
@@ -332,20 +306,22 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3"> 
+                                <div class="content-box content-style4 medium">
+                                <!-- 
                                 <div class="content-box content-style4 medium animated"
                                      data-animtype="fadeIn"
                                      data-animrepeat="0"
                                      data-animspeed="1s"
                                      data-animdelay="0.2s"
-                                     >
+                                     > 
+                                 -->                                    
                                     <h4 class="h4-body-title">
                                         <i class="icon-camera-streamline-video"></i>
-                                        Sharepoint Development
+                                        Workflow Automation
                                     </h4>
                                     <div class="content-box-text">
-                                        Cras sem erat, aliquet in egestas cursus, ullamcorper vitae
-                                        ligula. Nunc commodo lacinia eros ac condimentum
-
+                                       Complex business models need automated process to ensure timely execution.
+                                       Automate your business process with our workflow solutions! 
                                         <div>
                                             <a href="#" class=" btn btn-sm">
                                                 <span>read more</span>
@@ -365,12 +341,10 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                      >
                                     <h4 class="h4-body-title">
                                         <i class="icon-computer-imac"></i>
-                                        Workflow Automation
+                                        Custom Development
                                     </h4>
                                     <div class="content-box-text">
-                                        Cras sem erat, aliquet in egestas cursus, ullamcorper vitae
-                                        ligula. Nunc commodo lacinia eros ac condimentum
-
+									 Custom solutions provide companies with detailed execution of their business model.
                                         <div>
                                             <a href="#" class=" btn btn-sm">
                                                 <span>read more</span>
@@ -382,27 +356,12 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3"> 
-                                <div class="content-box content-style4 medium animated"
-                                     data-animtype="fadeIn"
-                                     data-animrepeat="0"
-                                     data-animspeed="1s"
-                                     data-animdelay="0.2s"
-                                     >
+                                <div class="content-box content-style4 medium" >
                                     <h4 class="h4-body-title">
                                         <i class="icon-paint-bucket-streamline"></i>
-                                        Custom Development
+                                        Government Contracting
                                     </h4>
-                                    <div class="content-box-text">
-                                        Cras sem erat, aliquet in egestas cursus, ullamcorper vitae
-                                        ligula. Nunc commodo lacinia eros ac condimentum
-
-                                        <div>
-                                            <a href="#" class=" btn btn-sm">
-                                                <span>read more</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
+                                    
 
                                 </div>
                             </div>
@@ -443,18 +402,16 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                          data-delay="0.6s">
                                         <div class="img-overlay thumb-label-item-img">
                                             <img
-                                                src="<?php echo $imgLoc;?>images/placeholders/portfolio1.jpg"
+                                                src="<?php echo $imgLoc;?>images/placeholders/stock1.png"
                                                 alt=""/>
 
                                             <div class="item-img-overlay">
                                                 <a class="portfolio-zoom fa fa-plus"
-                                                   href="<?php echo $imgLoc;?>images/placeholders/portfolio1.jpg"
-                                                   data-rel="prettyPhoto[portfolio]" title="Title goes here"></a>
+                                                   href="<?php echo $imgLoc;?>images/placeholders/stock1.png"
+                                                    title="Title goes here"></a>
 
                                                 <div class="item_img_overlay_content">
-                                                    <h3 class="thumb-label-item-title">
-                                                        <a href=""> Aenean llus mtus </a>
-                                                    </h3>
+                                                   
                                                 </div>
 
                                             </div>
@@ -471,18 +428,16 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                          data-delay="0.8s">
                                         <div class="img-overlay thumb-label-item-img">
                                             <img
-                                                src="<?php echo $imgLoc;?>images/placeholders/portfolio2.jpg"
+                                                src="<?php echo $imgLoc;?>images/placeholders/Stock2.png"
                                                 alt=""/>
 
                                             <div class="item-img-overlay">
                                                 <a class="portfolio-zoom fa fa-plus"
-                                                   href="<?php echo $imgLoc;?>images/placeholders/portfolio2.jpg"
+                                                   href="<?php echo $imgLoc;?>images/placeholders/Stock2.png"
                                                    data-rel="prettyPhoto[portfolio]" title="Title goes here"></a>
 
                                                 <div class="item_img_overlay_content">
-                                                    <h3 class="thumb-label-item-title">
-                                                        <a href=""> Donec vitae sapien </a>
-                                                    </h3>
+                                                  
                                                 </div>
 
                                             </div>
@@ -499,18 +454,16 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                          data-delay="1s">
                                         <div class="img-overlay thumb-label-item-img">
                                             <img
-                                                src="<?php echo $imgLoc;?>images/placeholders/portfolio3.jpg"
+                                                src="<?php echo $imgLoc;?>images/placeholders/Stock5.png"
                                                 alt=""/>
 
                                             <div class="item-img-overlay">
                                                 <a class="portfolio-zoom fa fa-plus"
-                                                   href="<?php echo $imgLoc;?>images/placeholders/portfolio3.jpg"
+                                                   href="<?php echo $imgLoc;?>images/placeholders/Stock5.png"
                                                    data-rel="prettyPhoto[portfolio]" title="Title goes here"></a>
 
                                                 <div class="item_img_overlay_content">
-                                                    <h3 class="thumb-label-item-title">
-                                                        <a href=""> Maecas nec odio </a>
-                                                    </h3>
+                                                    
                                                 </div>
 
                                             </div>
@@ -527,19 +480,16 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                          data-delay="1.2s">
                                         <div class="img-overlay thumb-label-item-img">
                                             <img
-                                                src="<?php echo $imgLoc;?>images/placeholders/portfolio4.jpg"
+                                                src="<?php echo $imgLoc;?>images/placeholders/Stock4.png"
                                                 alt=""/>
 
                                             <div class="item-img-overlay">
                                                 <a class="portfolio-zoom fa fa-plus"
-                                                   href="http://www.youtube.com/watch?v=mcw6j-QWGMo"
+                                                   href="<?php echo $imgLoc;?>images/placeholders/Stock4.png"
                                                    data-rel="prettyPhoto[portfolio]" title="Title goes here"></a>
 
                                                 <div class="item_img_overlay_content">
-                                                    <h3 class="thumb-label-item-title">
-                                                        <a href=""> Vestibum friilla </a>
-                                                    </h3>
-                                                </div>
+                                                  
 
                                             </div>
                                         </div>
@@ -547,120 +497,9 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                                     </div>
                                     <!-- //Portfolio Item// -->
-                                    <!-- Portfolio Item -->
-<!--                                     <div class="thumb-label-item animated branding" -->
-<!--                                          data-animtype="fadeInUp" -->
-<!--                                          data-animrepeat="0" -->
-<!--                                          data-speed="1s" -->
-<!--                                          data-delay="1.4s"> -->
-<!--                                         <div class="img-overlay thumb-label-item-img"> -->
-<!--                                             <img -->
-<!--                                                 src="images/placeholders/portfolio5.jpg" -->
-<!--                                                 alt=""/> -->
-
-<!--                                             <div class="item-img-overlay"> -->
-<!--                                                 <a class="portfolio-zoom fa fa-plus" -->
-<!--                                                    href="images/placeholders/portfolio5.jpg" -->
-<!--                                                    data-rel="prettyPhoto[portfolio]" title="Title goes here"></a> -->
-
-<!--                                                 <div class="item_img_overlay_content"> -->
-<!--                                                     <h3 class="thumb-label-item-title"> -->
-<!--                                                         <a href=""> Curatur lula </a> -->
-<!--                                                     </h3> -->
-<!--                                                 </div> -->
-
-<!--                                             </div> -->
-<!--                                         </div> -->
-
-
+    
                                     </div>
-                                    <!-- //Portfolio Item// -->
-                                    <!-- Portfolio Item -->
-<!--                                     <div class="thumb-label-item animated videos" -->
-<!--                                          data-animtype="fadeInUp" -->
-<!--                                          data-animrepeat="0" -->
-<!--                                          data-speed="1s" -->
-<!--                                          data-delay="1.6s"> -->
-<!--                                         <div class="img-overlay thumb-label-item-img"> -->
-<!--                                             <img -->
-<!--                                                 src="images/placeholders/portfolio6.jpg" -->
-<!--                                                 alt=""/> -->
-
-<!--                                             <div class="item-img-overlay"> -->
-<!--                                                 <a class="portfolio-zoom fa fa-plus" -->
-<!--                                                    href="http://www.youtube.com/watch?v=mcw6j-QWGMo" -->
-<!--                                                    data-rel="prettyPhoto[portfolio]" title="Title goes here"></a> -->
-
-<!--                                                 <div class="item_img_overlay_content"> -->
-<!--                                                     <h3 class="thumb-label-item-title"> -->
-<!--                                                         <a href=""> Pellentesque </a> -->
-<!--                                                     </h3> -->
-<!--                                                 </div> -->
-
-<!--                                             </div> -->
-<!--                                         </div> -->
-
-
-<!--                                     </div> -->
-                                    <!-- //Portfolio Item// -->
-                                    <!-- Portfolio Item -->
-<!--                                     <div class="thumb-label-item animated seo" -->
-<!--                                          data-animtype="fadeInUp" -->
-<!--                                          data-animrepeat="0" -->
-<!--                                          data-speed="1s" -->
-<!--                                          data-delay="1.8s"> -->
-<!--                                         <div class="img-overlay thumb-label-item-img"> -->
-<!--                                             <img -->
-<!--                                                 src="images/placeholders/portfolio7.jpg" -->
-<!--                                                 alt=""/> -->
-
-<!--                                             <div class="item-img-overlay"> -->
-<!--                                                 <a class="portfolio-zoom fa fa-plus" -->
-<!--                                                    href="images/placeholders/portfolio7.jpg" -->
-<!--                                                    data-rel="prettyPhoto[portfolio]" title="Title goes here"></a> -->
-
-<!--                                                 <div class="item_img_overlay_content"> -->
-<!--                                                     <h3 class="thumb-label-item-title"> -->
-<!--                                                         <a href=""> In enim justo </a> -->
-<!--                                                     </h3> -->
-<!--                                                 </div> -->
-
-<!--                                             </div> -->
-<!--                                         </div> -->
-
-
-<!--                                     </div> -->
-                                    <!-- //Portfolio Item// -->
-                                    <!-- Portfolio Item -->
-<!--                                     <div class="thumb-label-item animated web-design" -->
-<!--                                          data-animtype="fadeInUp" -->
-<!--                                          data-animrepeat="0" -->
-<!--                                          data-speed="1s" -->
-<!--                                          data-delay="2s"> -->
-<!--                                         <div class="img-overlay thumb-label-item-img"> -->
-<!--                                             <img -->
-<!--                                                 src="images/placeholders/portfolio8.jpg" -->
-<!--                                                 alt=""/> -->
-
-<!--                                             <div class="item-img-overlay"> -->
-<!--                                                 <a class="portfolio-zoom fa fa-plus" -->
-<!--                                                    href="images/placeholders/portfolio8.jpg" -->
-<!--                                                    data-rel="prettyPhoto[portfolio]" title="Title goes here"></a> -->
-
-<!--                                                 <div class="item_img_overlay_content"> -->
-<!--                                                     <h3 class="thumb-label-item-title"> -->
-<!--                                                         <a href=""> Lutus puvinar </a> -->
-<!--                                                     </h3> -->
-<!--                                                 </div> -->
-
-<!--                                             </div> -->
-<!--                                         </div> -->
-
-
-<!--                                     </div> -->
-                                    <!-- //Portfolio Item// -->
-
-
+    
                                 </div>
                             </div>
                         </div>
@@ -672,13 +511,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                         <div class="tab-container">
                             <div class="section-tab-arrow"></div>
                             <div class="section-etabs-container">
-                                <ul class="section-etabs">
-<!--                                     <li class="tab active"> -->
-<!--                                         <a href="#tabc1"> Our News</a> -->
-<!--                                     </li> -->
-                                    <li class="tab">
-                                        <a href="#tabc2"> Clients</a>
-                                    </li>
+                                <ul class="section-etabs">                                
                                     <li class="tab">
                                         <a href="#tabc3"> NewsLetter</a>
                                     </li>
@@ -688,185 +521,6 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                                 <div class="tab-content">
 
-<!--                                     <div id="tabc1"> -->
-<!--                                         <div class="row"> -->
-<!--                                             <div class="col-md-3 col-sm-3"> -->
-<!--                                                 <div class="feature animated" data-animtype="fadeInUp" data-animrepeat="0" data-animspeed="1s" data-animdelay="0.4s"> -->
-<!--                                                     <div class="feature-image img-overlay"> -->
-<!--                                                         <img src="images/placeholders/blog1.jpg" alt="Blog"> -->
-
-<!--                                                         <div class="item-img-overlay"> -->
-<!--                                                             <a class="portfolio-zoom fa fa-plus" href="images/placeholders/blog1.jpg" -->
-<!--                                                                data-rel="prettyPhoto[portfolio]" title="Title goes here"></a> -->
-
-<!--                                                         </div> -->
-
-<!--                                                     </div> -->
-
-<!--                                                     <div class="feature-content"> -->
-<!--                                                         <h3 class="h3-body-title blog-title"> -->
-<!--                                                             <a href="">Vix sumo ferri an</a> -->
-<!--                                                         </h3> -->
-<!--                                                         <p> -->
-<!--                                                             Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a [...] -->
-<!--                                                         </p> -->
-
-
-
-<!--                                                     </div> -->
-
-<!--                                                     <div class="feature-details"> -->
-<!--                                                         <i class="icon-calendar"></i> -->
-<!--                                                         <span>July 10, 2013</span> -->
-<!--                                                         <span class="details-seperator"></span> -->
-
-<!--                                                         <a href="#"><i class="icon-comment"></i><span>4</span></a> -->
-
-
-<!--                                                         <div class="feature-share"> -->
-<!--                                                             <a href="#"><i class="icon-heart"></i></a> -->
-<!--                                                             <a href="#"><i class="icon-facebook"></i></a> -->
-<!--                                                         </div> -->
-<!--                                                     </div>         -->
-<!--                                                 </div> -->
-<!--                                             </div> -->
-<!--                                             <div class="col-md-3 col-sm-3"> -->
-<!--                                                 <div class="feature animated" data-animtype="fadeInUp" data-animrepeat="0" data-animspeed="1s" data-animdelay="0.6s"> -->
-<!--                                                     <div class="feature-image img-overlay"> -->
-<!--                                                         <img src="images/placeholders/blog2.jpg" alt="Blog"> -->
-
-<!--                                                         <div class="item-img-overlay"> -->
-<!--                                                             <a class="portfolio-zoom fa fa-plus" href="images/placeholders/blog2.jpg" -->
-<!--                                                                data-rel="prettyPhoto[portfolio]" title="Title goes here"></a> -->
-
-<!--                                                         </div> -->
-
-<!--                                                     </div> -->
-
-<!--                                                     <div class="feature-content"> -->
-<!--                                                         <h3 class="h3-body-title blog-title"> -->
-<!--                                                             <a href="">Donec vitae sapien</a> -->
-<!--                                                         </h3> -->
-<!--                                                         <p> -->
-<!--                                                             Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a [...] -->
-<!--                                                         </p> -->
-
-
-
-<!--                                                     </div> -->
-
-<!--                                                     <div class="feature-details"> -->
-<!--                                                         <i class="icon-calendar"></i> -->
-<!--                                                         <span>July 10, 2013</span> -->
-<!--                                                         <span class="details-seperator"></span> -->
-
-<!--                                                         <a href="#"><i class="icon-comment"></i><span>4</span></a> -->
-
-
-<!--                                                         <div class="feature-share"> -->
-<!--                                                             <a href="#"><i class="icon-heart"></i></a> -->
-<!--                                                             <a href="#"><i class="icon-facebook"></i></a> -->
-<!--                                                         </div> -->
-<!--                                                     </div>         -->
-<!--                                                 </div> -->
-<!--                                             </div> -->
-<!--                                             <div class="col-md-3 col-sm-3"> -->
-<!--                                                 <div class="feature animated" data-animtype="fadeInUp" data-animrepeat="0" data-animspeed="1s" data-animdelay="0.8s"> -->
-<!--                                                     <div class="feature-image img-overlay"> -->
-<!--                                                         <img src="images/placeholders/blog3.jpg" alt="Blog"> -->
-
-<!--                                                         <div class="item-img-overlay"> -->
-<!--                                                             <a class="portfolio-zoom fa fa-plus" href="images/placeholders/blog3.jpg" -->
-<!--                                                                data-rel="prettyPhoto[portfolio]" title="Title goes here"></a> -->
-
-<!--                                                         </div> -->
-
-<!--                                                     </div> -->
-
-<!--                                                     <div class="feature-content"> -->
-<!--                                                         <h3 class="h3-body-title blog-title"> -->
-<!--                                                             <a href="">Aenean tellus metus</a> -->
-<!--                                                         </h3> -->
-<!--                                                         <p> -->
-<!--                                                             Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a [...] -->
-<!--                                                         </p> -->
-
-
-
-<!--                                                     </div> -->
-
-<!--                                                     <div class="feature-details"> -->
-<!--                                                         <i class="icon-calendar"></i> -->
-<!--                                                         <span>July 10, 2013</span> -->
-<!--                                                         <span class="details-seperator"></span> -->
-
-<!--                                                         <a href="#"><i class="icon-comment"></i><span>4</span></a> -->
-
-
-<!--                                                         <div class="feature-share"> -->
-<!--                                                             <a href="#"><i class="icon-heart"></i></a> -->
-<!--                                                             <a href="#"><i class="icon-facebook"></i></a> -->
-<!--                                                         </div> -->
-<!--                                                     </div>         -->
-<!--                                                 </div> -->
-<!--                                             </div> -->
-<!--                                             <div class="col-md-3 col-sm-3"> -->
-<!--                                                 <div class="feature animated" data-animtype="fadeInUp" data-animrepeat="0" data-animspeed="1s" data-animdelay="1s"> -->
-<!--                                                     <div class="feature-image img-overlay"> -->
-<!--                                                         <img src="images/placeholders/blog4.jpg" alt="Blog"> -->
-
-<!--                                                         <div class="item-img-overlay"> -->
-<!--                                                             <a class="portfolio-zoom fa fa-plus" href=">images/placeholders/blog4.jpg" -->
-<!--                                                                data-rel="prettyPhoto[portfolio]" title="Title goes here"></a> -->
-
-<!--                                                         </div> -->
-
-<!--                                                     </div> -->
-
-<!--                                                     <div class="feature-content"> -->
-<!--                                                         <h3 class="h3-body-title blog-title"> -->
-<!--                                                             <a href="">Aenean tellus metus</a> -->
-<!--                                                         </h3> -->
-<!--                                                         <p> -->
-<!--                                                             Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a [...] -->
-<!--                                                         </p> -->
-
-
-
-<!--                                                     </div> -->
-
-<!--                                                     <div class="feature-details"> -->
-<!--                                                         <i class="icon-calendar"></i> -->
-<!--                                                         <span>July 10, 2013</span> -->
-<!--                                                         <span class="details-seperator"></span> -->
-
-<!--                                                         <a href="#"><i class="icon-comment"></i><span>4</span></a> -->
-
-
-<!--                                                         <div class="feature-share"> -->
-<!--                                                             <a href="#"><i class="icon-heart"></i></a> -->
-<!--                                                             <a href="#"><i class="icon-facebook"></i></a> -->
-<!--                                                         </div> -->
-<!--                                                     </div>         -->
-<!--                                                 </div> -->
-<!--                                             </div> -->
-<!--                                         </div>             -->
-<!--                                     </div> -->
-                                    <div id="tabc2">
-                                        <div class="row">
-                                            <div class="col-md-12 col-sm-12">
-                                                <h2 class="h2-section-title animated" data-animtype="flipInX" data-animrepeat="0" data-animspeed="1s" data-animdelay="0s">Our Clients </h2>
-                                                <h3 class="h3-section-info animated" data-animtype="flipInX" data-animrepeat="0" data-animspeed="1s" data-animdelay="0.2s">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
-                                                    rhoncus ut, imperdiet</h3>
-                                                <ul class="section-clients">
-                                                    <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.2s"><img src="<?php echo $imgLoc;?>images/placeholders/clients/white_logo1.png" alt="Logo" class="img-responsive client-image" /></li>
-                                                    <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.3s"><img src="<?php echo $imgLoc;?>images/placeholders/clients/white_logo2.png" alt="Logo" class="img-responsive client-image" /></li>
-                                                    <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.4s"><img src="<?php echo $imgLoc;?>images/placeholders/clients/white_logo3.png" alt="Logo" class="img-responsive client-image" /></li>
-                                                    <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.5s"><img src="<?php echo $imgLoc;?>images/placeholders/clients/white_logo4.png" alt="Logo" class="img-responsive client-image" /></li>
-                                                    <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.6s"><img src="<?php echo $imgLoc;?>images/placeholders/clients/white_logo5.png" alt="Logo" class="img-responsive client-image" /></li>
-                                                </ul>
-                                            </div>
-                                        </div>            </div>
                                     <div id="tabc3">
                                         <h2 class="h2-section-title animated" data-animtype="flipInY"
                                             data-animrepeat="0"
@@ -878,26 +532,20 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                              data-animrepeat="0"
                                              data-speed="1s"
                                              data-delay="0.5s">
-                                            <form action="#" method="post">
-                                                <input type="text" name="q" class="subscribe-input text-input" placeholder="Email.."/>
-                                                <button class="subscribe-button icon-email-plane">
-
-                                                </button>
-                                            </form>
+                                             <?php echo Html::beginForm(); ?>
+                                            	<form action="index" method="post">
+                                            	    <?php echo Html::activeTextInput($model,'email', ['class' => 'subscribe-input text-input', 'placeholder' => 'Email..']) ?>
+                                                	<button class="subscribe-button icon-email-plane">
+                                                	</button>
+                                            	</form>
+                                             <?php echo Html::endForm(); ?>
 
                                             <div class="social-icons circle">
 
                                                 <a href="#" target="_blank" class="social-media-icon facebook-icon bounceIn" data-original-title="facebook">facebook</a>
 
                                                 <a href="#" target="_blank" class="social-media-icon twitter-icon bounceIn" data-original-title="twitter">Twitter</a>
-
-                                                <a href="#" target="_blank" class="social-media-icon skype-icon bounceIn" data-original-title="skype">skype</a>
-
-                                                <a href="#" target="_blank" class="social-media-icon evernote-icon bounceIn" data-original-title="evernote">evernote</a>
-
-                                                <a href="#" target="_blank" class="social-media-icon flickr-icon bounceIn" data-original-title="flickr">flickr</a>
-
-                                                <a href="#" target="_blank" class="social-media-icon instagram-icon bounceIn" data-original-title="instagram">instagram</a>
+                                               
                                             </div>
 
                                         </div>
@@ -905,45 +553,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                     </div>
                                 </div>
                             </div>
-                        </div>    </div>
-
-<!--                     <div class="section-content no-padding"> -->
-
-
-<!--                         <div class="container"> -->
-
-<!--                             <div class="row"> -->
-<!--                                 <div class="col-md-12 col-sm-12 animated" data-animtype="fadeInUp" -->
-<!--                                      data-animrepeat="0" -->
-<!--                                      data-speed="1s" -->
-<!--                                      data-delay="0.4s"> -->
-<!--                                     <h2 class="h2-section-title">Take A Closer Look</h2> -->
-
-<!--                                     <div class="i-section-title"> -->
-<!--                                         <i class="icon-zoom-in"> -->
-
-<!--                                         </i> -->
-<!--                                     </div> -->
-
-<!--                                     <h3 class="h3-section-info"> -->
-<!--                                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque -->
-<!--                                         laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et -->
-<!--                                         quasi architecto beatae vitae dicta sunt explicabo. -->
-<!--                                     </h3> -->
-<!--                                 </div> -->
-
-<!--                             </div> -->
-
-<!--                             <div class="row"> -->
-<!--                                 <div class="col-md-12 col-sm-12 no-bottom-margin animated" data-animtype="fadeInUp" -->
-<!--                                      data-animrepeat="0" -->
-<!--                                      data-animspeed="1s" -->
-<!--                                      data-animdelay="0.7s"> -->
-<!--                                     <img src="images/placeholders/responsive-mockup2-placeholder.png" alt="MockUp" class="img-responsive" /> -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                         </div> -->
-<!--                     </div> -->
+                        </div>  
+                   </div>
 
                     <div class="space-sep40"></div>
 
@@ -980,8 +591,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             </h4>
                                             <div class="content-box-text">
                                                 <p> 
-                                                    Cras sem erat, aliquet in egestas cursus, ullamcorper vitae 
-                                                    ligula. Nunc commodo lacinia eros ac condimentum
+                                                 CRM solutions help service providers manage customers,
+                                                 suppliers and support complex business processes.                                                  
                                                 </p>
                                             </div>
                                         </div>
@@ -1002,8 +613,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             </h4>
                                             <div class="content-box-text">
                                                 <p> 
-                                                    Cras sem erat, aliquet in egestas cursus, ullamcorper vitae 
-                                                    ligula. Nunc commodo lacinia eros ac condimentum
+                                                  SharePoint is a great tool to manage document workflows, 
+                                                  archiving, editng and managing documents. Powerful search capacities help ensure finding documents faster.
                                                 </p>
                                             </div>
                                         </div>
@@ -1024,35 +635,12 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             </h4>
                                             <div class="content-box-text">
                                                 <p> 
-                                                    Cras sem erat, aliquet in egestas cursus, ullamcorper vitae 
-                                                    ligula. Nunc commodo lacinia eros ac condimentum
+                                                  Complex business models need automated process to ensure timely execution.
+                                                  Automate your business process with our workflow solutions!                                                 
                                                 </p>
                                             </div>
                                         </div>
                                     </li>
-
-                                    <li class="icon-content-single">
-
-                                        <div class="content-box  style5  animated "
-                                             data-animtype="fadeIn"
-                                             data-animrepeat="0"
-                                             data-animspeed="1s"
-                                             data-animdelay="0.2s"
-                                             >
-                                            <h4 class="h4-body-title">
-                                                <strong>Automate </strong> Business Processes            
-
-                                                <i class="icon-file-settings"></i>
-                                            </h4>
-                                            <div class="content-box-text">
-                                                <p> 
-                                                    Cras sem erat, aliquet in egestas cursus, ullamcorper vitae 
-                                                    ligula. Nunc commodo lacinia eros ac condimentum
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-
                                 </ul>
                             </div>
                             <div class="col-md-6 col-sm-6">
@@ -1073,35 +661,11 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             </h4>
                                             <div class="content-box-text">
                                                 <p> 
-                                                    Cras sem erat, aliquet in egestas cursus, ullamcorper vitae 
-                                                    ligula. Nunc commodo lacinia eros ac condimentum
+												Custom solutions provide companies with detailed execution of their business model.
                                                 </p>
                                             </div>
                                         </div>
                                     </li>
-
-                                    <li class="icon-content-single">
-
-                                        <div class="content-box  style5  animated "
-                                             data-animtype="fadeIn"
-                                             data-animrepeat="0"
-                                             data-animspeed="1s"
-                                             data-animdelay="0.2s"
-                                             >
-                                            <h4 class="h4-body-title">
-                                                <strong>Workflow </strong> Managment            
-
-                                                <i class="icon-world"></i>
-                                            </h4>
-                                            <div class="content-box-text">
-                                                <p> 
-                                                    Cras sem erat, aliquet in egestas cursus, ullamcorper vitae 
-                                                    ligula. Nunc commodo lacinia eros ac condimentum
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-
                                     <li class="icon-content-single">
 
                                         <div class="content-box  style5  animated "
@@ -1117,8 +681,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             </h4>
                                             <div class="content-box-text">
                                                 <p> 
-                                                    Cras sem erat, aliquet in egestas cursus, ullamcorper vitae 
-                                                    ligula. Nunc commodo lacinia eros ac condimentum
+                                                 The process of managing and locating object or materials can be a tremendous effort.
+                                                 We provide innovative solutions to handle your inventory.                                                 
                                                 </p>
                                             </div>
                                         </div>
@@ -1139,8 +703,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             </h4>
                                             <div class="content-box-text">
                                                 <p> 
-                                                    Cras sem erat, aliquet in egestas cursus, ullamcorper vitae 
-                                                    ligula. Nunc commodo lacinia eros ac condimentum
+												We provide technology services to the State of Florida.
+												We are certified Minority business enterprise in the state of Florida.
                                                 </p>
                                             </div>
                                         </div>
@@ -1163,20 +727,11 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                      data-animrepeat="1"
                                      data-speed="1s"
                                      data-delay="0s">
-                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                                    nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                                    Customizing and developing applications can drain IT budgets and resources. Our flexible development methods provide scalable solutions that address short-term business
+                                    requirements and long-term strategic growth objectives.
                                 </div>
                             </div>
-                            <div class="col-md-2 col-sm-2">
-                                <div class="testimonial-big-img animated" data-animtype="fadeInLeft"
-                                     data-animrepeat="1"
-                                     data-speed="1s"
-                                     data-delay="0s">
-                                    <img src="<?php echo $imgLoc;?>images/placeholders/testimonial-big.png" alt=""/>
-                                </div>
-                            </div>
-
-                        </div>
+                         </div>
                     </div>
                 </div>
             </div><!--.content-wrapper end -->
@@ -1195,10 +750,10 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             <img src="<?php echo $imgLoc;?>images/main_logo.png" alt=""/>
                                         </div>
                                         <div class="footer-content-text">
-                                            <p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                                dolor.</p>
-                                            <p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                                dolor.</p>
+                                            <p>We have over 10 years of logistic technology experience. Listening to our clients and delivering quality software
+                                               is the cornerstone of our success.</p>
+                                            <p>We deliver flexible, scalable solutions that simultaneously address short-term business requirements and long-term
+                                               strategic growth objectives</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1257,31 +812,16 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- //Footer Col.// -->
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-title">
-                                        Photostream
-                                    </div>
-                                    <div class="footer-content">
-                                        <div class="flickr_badge_wrapper">
-                                            <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=9&display=latest&size=s&layout=x&source=all_tag&tag=Sky,scrappers" id="flicker-images"></script>                            
-                                        </div>
-                                        <!-- //Footer Col.// -->
-
-                                    </div>
-                                </div>
+                                                              
                             </div>
                         </div>
 
                     </div>
-                    <div class="copyright">
+                     <div class="copyright">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 center-text">
-                                    <div class="copyright-text">&copy; 2013 Kanzi Theme | Theme Developed By <a href="http://www.activeaxon.com" target="_blank">ActiveAxon</a></div>
+                                    <div class="copyright-text">&copy; 2012 - 2015 Teknet Media, Inc.</div>
                                 </div>
 
                             </div>
@@ -1291,8 +831,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
             </footer>
 
         </div><!-- wrapper end -->
-
-    <?php $this->endBody() ?> 
+        <?php $this->endBody() ?> 
     </body>
 </html>
 <?php $this->endPage() ?>
