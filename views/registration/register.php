@@ -58,10 +58,37 @@ $btnCssStyle = 'width: 126px;';
         
         <!-- Override Boostrap Styles -->
         <style type="text/css">
+        
         	.form-group {
         		margin-bottom: 0px;
-        	}        	       	
+        	}
+        	
+        	html {
+              position: relative;
+              min-height: 100%;
+            }
+        
+            body {
+              /* Margin bottom by footer height */
+              margin-bottom: 60px;
+            }
+        
+            .footer {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              /* Set the fixed height of the footer here */
+              height: 80px;
+              background-color: #f5f5f5;
+            }
+            
         </style>
+        
+        <script>
+          function cancelLogin(element){	  
+        	window.location.href = '<?php echo Yii::$app->request->baseUrl; ?>' + '/index.php?r=site/index';
+          }
+        </script>        
         
     </head>
     <body>        
@@ -326,7 +353,7 @@ $btnCssStyle = 'width: 126px;';
                                         <div class="form-group">
                                             <div class="col-sm-offset-3 col-sm-9">
                                                 <?= Html::submitButton('Submit', ['class'=> 'btn btn-block btn-primary','style'=>$btnCssStyle]) ;?>                                                
-                                                <?= Html::submitButton('Cancel', ['class'=> 'btn btn-block btn-primary','style'=>$btnCssStyle]) ;?>
+                                                <?= Html::button('Cancel', ['class'=> 'btn btn-block btn-primary','style'=>$btnCssStyle,'onclick'=>'javascript:cancelLogin(this);']) ;?> 
                                             </div>
                                         </div>
 
@@ -343,105 +370,16 @@ $btnCssStyle = 'width: 126px;';
             </div><!--.content-wrapper end -->                       
             
             <footer>
-                <div class="footer">
-
-                    <div class="container">
-                        <div class="footer-wrapper">
-                            <div class="row">
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-content">
-                                        <div class="footer-content-logo">
-                                            <img src="<?php echo $imgLoc;?>images/main_logo.png" alt=""/>
-                                        </div>
-                                        <div class="footer-content-text">
-                                            <p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                                dolor.</p>
-                                            <p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                                dolor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- //Footer Col.// -->
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-title">
-                                        Recent Tweets
-                                    </div>
-                                    <div class="footer-content footer-recent-tweets-container">
-                                        <ul class="tweetList footer-recent-tweets">
-                                            <li class="tweet_content item">
-                                                <p>Grab a copy of the popular Boomerang theme for $10 until its next release! </p>
-                                                <p class="timestamp">2 days ago</p>
-                                            </li>
-                                            <li class="tweet_content item">
-                                                <p>Newest Blog Awesome post: Stacking Text and Icons <a href="http://t.co/1qRP8K1wjG">Check it</a></p>
-                                                <p class="timestamp">4 days ago</p>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- //Footer Col.// -->
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                    <div class="footer-title">
-                                        Links
-                                    </div>
-                                    <div class="footer-content">
-                                        <ul class="footer-category-list">
-                                            <li>
-                                                <a href="">Lorem Ipsum</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Dolor Sit Amet</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Nullam dignissim</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Lorem Ipsum</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Lorem Ipsum</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Dolor Sit Amet</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Dolor Sit Amet</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- //Footer Col.// -->
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-                                  
-                                  </div>
-                            </div>
+            	<div class="footer">
+                   <div class="copyright">
+                     <div class="container">
+                      	<div class="center-text">
+                           <div class="copyright-text" style="color: white;">&copy; 2015 TeknetMedia</div>
                         </div>
-
-                    </div>
-                    <div class="copyright">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 center-text">
-                                    <div class="copyright-text">&copy; 2012 - 2015 Teknet Media, Inc.</div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                     </div>
+                   </div>
                 </div>
-            </footer>
+            </footer> 
 
         </div><!-- wrapper end -->
 

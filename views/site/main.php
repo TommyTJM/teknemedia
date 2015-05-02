@@ -688,22 +688,23 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                 </div>
             </div><!--.content-wrapper end -->
-            <footer>
-                <div class="footer">
-                    <div class="copyright">
-                        <div class="container">
-                                <div class="center-text">
-                                    <div class="copyright-text">&copy; 2015 Teknetmedia</div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+
 
         </div><!-- wrapper end -->
     
 
     <?php $this->endBody() ?> 
     </body>
+    <footer>
+    	<div class="footer">
+           <div class="copyright">
+             <div class="container">
+              	<div class="center-text">
+                   <div class="copyright-text">&copy; 2015 Teknetmedia</div>
+                </div>
+             </div>
+           </div>
+        </div>
+    </footer>    
 </html>
 <?php $this->endPage() ?>
