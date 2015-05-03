@@ -54,23 +54,12 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
     <body>
     <?php $this->beginBody() ?>
 
+  <div id="wrapper"  >
 
-
-        <div id="wrapper"  >
-
-         
             <div class="top_wrapper">
                 <div class="top-bar">
                     <div class="container">
                         <div class="row">
-                        	<!--
-                            <div class="col-sm-7">
-                                <div class="call-us top-bar-block">                                 
-                                </div>
-                                <div class="mail-us top-bar-block">                                                             
-                                </div>
-                            </div>
-                            -->
                             <div class="col-sm-10">
 
                                 <!-- Search Box -->
@@ -83,13 +72,13 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 </div>
                                 <!-- //Search Box// -->
                                 <div class="social-icons">
-                                    <ul>                                        
+                                    <ul>
                                         <li>
                                             <a href="#" target="_blank" class="social-media-icon facebook-icon" data-original-title="facebook">facebook</a>
                                         </li>
                                         <li>
                                             <a href="#" target="_blank" class="social-media-icon twitter-icon" data-original-title="twitter">twitter</a>
-                                        </li>                                                                               
+                                        </li>                                      
                                     </ul>
                                 </div>
                             </div>
@@ -107,11 +96,10 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                     </span>                            
                                 </div>
 
-                            </div>                             
+                            </div>                            
                         </div>
                     </div>
                 </div>
-
                 <!-- Header -->
                 <header id="header">
                     <div class="container">
@@ -139,7 +127,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
 
 
-                                <nav>
+                               <nav>
                                     <ul class="navigation">
                                         <li>
                                             <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/index">
@@ -149,33 +137,21 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             </a>                                          
                                         </li>
                                         <li>
-                                            <a href="about-us.html">
+                                            <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/about"  class="activelink">
                                                 <span class="label-nav">
                                                     About Us
                                                 </span>
-                                            </a>
-                                            <!-- 
-                                            <ul>
-
-                                                <li>
-                                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/register">Sign Up </a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/login">Sign In</a>
-                                                </li>
-
-                                            </ul>
-                                             -->
+                                            </a>                                          
                                         </li>
                                         <li>
-                                            <a href="services.html">
+                                             <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/services">
                                                 <span class="label-nav">
                                                     Services
                                                 </span>
                                             </a>         
                                         </li>
                                         <li>
-                                            <a href="contact.html">
+                                           <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/contact">
                                                 <span class="label-nav">
                                                     Contact Us
                                                 </span>
@@ -223,7 +199,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                     <div class="breadcrumb-container">
                                         <ol class="breadcrumb">
                                             <li>
-                                                <a href="home-version1.html">Home</a>
+                                                <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/index">Home</a>
                                             </li>
                                             <li class="active">About Us</li>
                                         </ol>
@@ -268,13 +244,12 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                     <h3 class="h3-body-title">Why Choose Us</h3>
                                     <div class="title-seperator"></div>
                                 </div>                <p>
-                                    Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets. Sed ut perspiciatis unde omnis iste natus error sit 
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
-                                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui.
+                                    We help small to medium size companies support unique business goals and objectives. 
+                                    Leveraging mobile, automated and process management solutions. Our consulting services enable companies to customize their systems.
                                 </p>
                                 <p>
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
-                                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui.
+                                    Streamline your process into automate services and scale your solutions to meet your business needs.
+                                    We solve business challenges using enterprise-level custom software development solutions.                                   
 
                                 </p>
                             </div>
@@ -296,7 +271,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                     <!-- slider item -->
                                     <div class="slider-img">
 
-                                        <img src="<?php echo $imgLoc;?>images/placeholders/image-placeholder.jpg" alt="image-placeholder.jpg"/>
+                                        <img src="<?php echo $imgLoc;?>images/placeholders/Logistics_Warehouse_picture.png" alt="Logistics_Warehouse_picture.png"/>
                                     </div>
                                     <!-- //slider item// -->
                                     <!-- slider item -->
@@ -329,9 +304,10 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                                         <div class="title">
                                             <div class="open-icon"></div>
-                                            <h4>In enim justo, rhoncus ut ?</h4>
+                                            <h4>Inventory Managment</h4>
                                         </div>
-                                        <div class="desc">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut.</div>
+                                        <div class="desc">Inventory management solution to reduce your carrying costs by tracking products and parts as they are
+                                                        transported from a vendor to a warehouse, between warehouses, and finally to a retail location or directly to a customer.</div>
                                     </div>
 
 
@@ -339,9 +315,10 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                                         <div class="title">
                                             <div class="open-icon"></div>
-                                            <h4>Cum sociis natoque penatibus ?</h4>
+                                            <h4>CRM Solutions</h4>
                                         </div>
-                                        <div class="desc">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</div>
+                                        <div class="desc">Managing interactions with current and future customers ,often involves using technology to organize,
+                                                          automate, and synchronize sales, marketing, customer service, and technical support. Our CRM solutions will give you and excellent ROI.</div>
                                     </div>
 
 
@@ -349,9 +326,10 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                                         <div class="title">
                                             <div class="open-icon"></div>
-                                            <h4>In hac habitasse platea dictumst. ?</h4>
+                                            <h4>Workflow Automation</h4>
                                         </div>
-                                        <div class="desc">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</div>
+                                        <div class="desc"> Worlflow solutions, which automates the tasks, resources and internal operations are esstinal to ever business. Our solutions
+                                                          provide the unique solutions your business needs!</div>
                                     </div>
 
 
@@ -363,34 +341,34 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                     <div class="title-seperator"></div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar animated" role="progressbar" aria-valuenow="85%" 
+                                    <div class="progress-bar animated" role="progressbar" aria-valuenow="100%" 
                                          aria-valuemin="0" aria-valuemax="100"
                                          data-animtype="animate-progress"
                                          data-animrepeat="0">
 
-                                        <span class="sr-only">WordPress</span>
+                                        <span class="sr-only">.NET / MVC / CRM</span>
                                     </div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar animated" role="progressbar" aria-valuenow="90%" 
+                                    <div class="progress-bar animated" role="progressbar" aria-valuenow="100%" 
                                          aria-valuemin="0" aria-valuemax="100"
                                          data-animtype="animate-progress"
                                          data-animrepeat="0">
 
-                                        <span class="sr-only">Graphic Design</span>
+                                        <span class="sr-only">IMS / WMS</span>
                                     </div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar animated" role="progressbar" aria-valuenow="95%" 
+                                    <div class="progress-bar animated" role="progressbar" aria-valuenow="100%" 
                                          aria-valuemin="0" aria-valuemax="100"
                                          data-animtype="animate-progress"
                                          data-animrepeat="0">
 
-                                        <span class="sr-only">Javascript</span>
+                                        <span class="sr-only">CUSTOM CODING</span>
                                     </div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar animated" role="progressbar" aria-valuenow="80%" 
+                                    <div class="progress-bar animated" role="progressbar" aria-valuenow="100%" 
                                          aria-valuemin="0" aria-valuemax="100"
                                          data-animtype="animate-progress"
                                          data-animrepeat="0">
@@ -403,173 +381,12 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                         <div class="space-sep40"></div>
 
-<!--                         <div class="row">             -->
-<!--                             <div class="col-md-12 col-sm-12"> -->
-<!--                                 <div class="title-block clearfix"> -->
-<!--                                     <h3 class="h3-body-title">Our Team</h3> -->
-<!--                                     <div class="title-seperator"></div> -->
-<!--                                 </div>                <p> -->
-<!--                                     Malesuada tortor, nec scelerisque lorem mattis. Nunc et rutrum consetetur sadipscing elitr, sed diam nonumy at volutpat. Sed consectetur suscipit lorem nunc.adipiscing elit. Integer commodo tristique odio, quis fringilla ligula aliquet ut. Maecenas sed justo varius velit imperdiet bibendum et rutrum. -->
-<!--                                 </p> -->
-<!--                             </div> -->
-<!--                         </div> -->
-
-<!--                         <div class="row"> -->
-<!--                             <div class="col-md-3 col-sm-3"> -->
-<!--                                 <div class="team-member"> -->
-<!--                                     <div class="team-member-image img-overlay"> -->
-<!--                                         <img src="images/placeholders/team-placeholder.jpg" alt="Charlie Barns"/> -->
-
-<!--                                         <div class="item-img-overlay"> -->
-<!--                                             <div class="social-icons item_img_overlay_content"> -->
-
-<!--                                                 <a href="#" title="ember" target="_blank" class="social-media-icon ember-icon">ember</a> -->
-<!--                                                 <a href="#" title="pininterest" target="_blank" class="social-media-icon pininterest-icon">pininterest</a> -->
-<!--                                                 <a href="#" title="youtube" target="_blank" class="social-media-icon youtube-icon">youtube</a> -->
-<!--                                                 <a href="#" title="zerply" target="_blank" class="social-media-icon zerply-icon">zerply</a> -->
-
-
-<!--                                             </div> -->
-
-<!--                                         </div> -->
-<!--                                     </div> -->
-<!--                                     <div class="team-member-content"> -->
-<!--                                         <h3 class="team-member-name h3-body-title"> -->
-<!--                                             Charlie Barns -->
-<!--                                         </h3> -->
-
-<!--                                         <div class="team-member-position"> -->
-<!--                                             Project Manager -->
-<!--                                         </div> -->
-<!--                                         <div class="team-member-short-bio"> -->
-<!--                                             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  -->
-<!--                                             sanctus est Lorem ipsum dolor sit amet -->
-<!--                                         </div> -->
-<!--                                     </div> -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                             <div class="col-md-3 col-sm-3"> -->
-<!--                                 <div class="team-member"> -->
-<!--                                     <div class="team-member-image img-overlay"> -->
-<!--                                         <img src="images/placeholders/team-placeholder.jpg" alt="Fred Bloggs"/> -->
-
-<!--                                         <div class="item-img-overlay"> -->
-<!--                                             <div class="social-icons item_img_overlay_content"> -->
-
-<!--                                                 <a href="#" title="mail" target="_blank" class="social-media-icon mail-icon">mail</a> -->
-<!--                                                 <a href="#" title="reddit" target="_blank" class="social-media-icon reddit-icon">reddit</a> -->
-
-
-<!--                                             </div> -->
-
-<!--                                         </div> -->
-<!--                                     </div> -->
-<!--                                     <div class="team-member-content"> -->
-<!--                                         <h3 class="team-member-name h3-body-title"> -->
-<!--                                             Fred Bloggs -->
-<!--                                         </h3> -->
-
-<!--                                         <div class="team-member-position"> -->
-<!--                                             Web Developer -->
-<!--                                         </div> -->
-<!--                                         <div class="team-member-short-bio"> -->
-<!--                                             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  -->
-<!--                                             sanctus est Lorem ipsum dolor sit amet -->
-<!--                                         </div> -->
-<!--                                     </div> -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                             <div class="col-md-3 col-sm-3"> -->
-<!--                                 <div class="team-member"> -->
-<!--                                     <div class="team-member-image img-overlay"> -->
-<!--                                         <img src="images/placeholders/team-placeholder.jpg" alt="Jecson Smith"/> -->
-
-<!--                                         <div class="item-img-overlay"> -->
-<!--                                             <div class="social-icons item_img_overlay_content"> -->
-
-<!--                                                 <a href="#" title="blogger" target="_blank" class="social-media-icon blogger-icon">blogger</a> -->
-<!--                                                 <a href="#" title="vimeo" target="_blank" class="social-media-icon vimeo-icon">vimeo</a> -->
-<!--                                                 <a href="#" title="linkedin" target="_blank" class="social-media-icon linkedin-icon">linkedin</a> -->
-
-
-<!--                                             </div> -->
-
-<!--                                         </div> -->
-<!--                                     </div> -->
-<!--                                     <div class="team-member-content"> -->
-<!--                                         <h3 class="team-member-name h3-body-title"> -->
-<!--                                             Jecson Smith -->
-<!--                                         </h3> -->
-
-<!--                                         <div class="team-member-position"> -->
-<!--                                             UI Specialist -->
-<!--                                         </div> -->
-<!--                                         <div class="team-member-short-bio"> -->
-<!--                                             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  -->
-<!--                                             sanctus est Lorem ipsum dolor sit amet -->
-<!--                                         </div> -->
-<!--                                     </div> -->
-<!--                                 </div> -->
-<!--                             </div> -->
-<!--                             <div class="col-md-3 col-sm-3"> -->
-<!--                                 <div class="team-member"> -->
-<!--                                     <div class="team-member-image img-overlay"> -->
-<!--                                         <img src="images/placeholders/team-placeholder.jpg" alt="John Doe"/> -->
-
-<!--                                         <div class="item-img-overlay"> -->
-<!--                                             <div class="social-icons item_img_overlay_content"> -->
-
-<!--                                                 <a href="#" title="instagram" target="_blank" class="social-media-icon instagram-icon">instagram</a> -->
-<!--                                                 <a href="#" title="ember" target="_blank" class="social-media-icon ember-icon">ember</a> -->
-<!--                                                 <a href="#" title="blogger" target="_blank" class="social-media-icon blogger-icon">blogger</a> -->
-
-
-<!--                                             </div> -->
-
-<!--                                         </div> -->
-<!--                                     </div> -->
-<!--                                     <div class="team-member-content"> -->
-<!--                                         <h3 class="team-member-name h3-body-title"> -->
-<!--                                             John Doe -->
-<!--                                         </h3> -->
-
-<!--                                         <div class="team-member-position"> -->
-<!--                                             CEO -->
-<!--                                         </div> -->
-<!--                                         <div class="team-member-short-bio"> -->
-<!--                                             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  -->
-<!--                                             sanctus est Lorem ipsum dolor sit amet -->
-<!--                                         </div> -->
-<!--                                     </div> -->
-<!--                                 </div> -->
-<!--                             </div> -->
-
-<!--                         </div> -->
-
-
-<!--                     </div> -->
                 </div>
-<!--                 <div class="section-content bottom-body clients-section"> -->
-<!--                     <div class="container"> -->
 
-<!--                         <div class="row"> -->
-<!--                             <div class="col-md-12 col-sm-12"> -->
-<!--                                 <ul class="bottom-body-clients"> -->
-<!--                                     <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.2s"><img src="images/placeholders/clients/logo1.png" alt="Logo" class="img-responsive client-image" /></li> -->
-<!--                                     <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.3s"><img src="images/placeholders/clients/logo3.png" alt="Logo" class="img-responsive client-image" /></li> -->
-<!--                                     <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.4s"><img src="images/placeholders/clients/logo4.png" alt="Logo" class="img-responsive client-image" /></li> -->
-<!--                                     <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.5s"><img src="images/placeholders/clients/logo2.png" alt="Logo" class="img-responsive client-image" /></li> -->
-<!--                                     <li class="animated" data-animtype="bounceIn" data-animrepeat="0" data-animdelay="0.6s"><img src="images/placeholders/clients/logo5.png" alt="Logo" class="img-responsive client-image" /></li> -->
-<!--                                 </ul>            </div> -->
-<!--                         </div> -->
-
-<!--                     </div> -->
-
-<!--                 </div> -->
             </div>
             
             <!--.content-wrapper end -->
-            <footer>
+        <footer>
                 <div class="footer">
 
                     <div class="container">
@@ -584,10 +401,10 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             <img src="<?php echo $imgLoc;?>images/main_logo.png" alt=""/>
                                         </div>
                                         <div class="footer-content-text">
-                                            <p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                                dolor.</p>
-                                            <p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                                dolor.</p>
+                                            <p>We have over 10 years of logistic technology experience. Listening to our clients and delivering quality software
+                                               is the cornerstone of our success.</p>
+                                            <p>We deliver flexible, scalable solutions that simultaneously address short-term business requirements and long-term
+                                               strategic growth objectives</p>
                                         </div>
                                     </div>
                                 </div>
@@ -646,18 +463,12 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                         </ul>
                                     </div>
                                 </div>
-                                <!-- //Footer Col.// -->
-
-
-                                <!-- Footer Col. -->
-                                <div class="col-md-3 col-sm-3 footer-col">
-
-                                </div>
+                                                              
                             </div>
                         </div>
 
                     </div>
-                    <div class="copyright">
+                     <div class="copyright">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 center-text">
@@ -671,7 +482,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
             </footer>
 
         </div><!-- wrapper end -->
-        
+            
     <?php $this->endBody() ?> 
     </body>
 </html>

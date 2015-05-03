@@ -9,6 +9,8 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\RegisterForm;
 use app\models\ContactForm;
+use app\models\TkntUsers;
+use app\models\TkntNewsLetter;
 
 class SiteController extends Controller
 {
@@ -52,8 +54,52 @@ class SiteController extends Controller
     {
         //return $this->render('index');
         
-        $model=new LoginForm();        	
-        return $this->renderPartial('home',array('model'=>$model));
+       $loginmodel = new LoginForm();
+
+       if($loginmodel->load(Yii::$app->request->post())) {
+             
+       			$news = new TkntNewsLetter();
+       
+       			$news->email = $loginmodel->email;
+        
+		        try {
+		        	
+		        	$news->save();
+		        	
+		        	return $this->render('thankyou');
+		        } catch (Exception $e) {
+		        	Yii::trace("Error saving User: ".$e->getMessage);
+		        }
+        
+        	} else
+        	 {
+        		return $this->render('home', [
+        			'model' => $loginmodel,
+        		]);
+        }
+        
+        //return $this->renderPartial('home',array('model'=>$model));
+    }
+    
+    public function actionNews()
+    {
+    	$model = new TkntNewsLetter();
+    	
+    	if($model->load(Yii::$app->request->post()) && $model->validate()) {
+
+    		$model->save();
+    	
+    		return $this->render('thankyou');
+    		
+    	} else {
+    		
+    		$loginmodel = new LoginForm();
+    		
+    		return $this->render('home', [
+    				'model' => $loginmodel,
+    		]);
+    	}    	
+    	
     }
     
     public function actionLogin()
@@ -99,24 +145,37 @@ class SiteController extends Controller
 
     public function actionContact()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        } else {
-            return $this->render('contact', [
-                'model' => $model,
-            ]);
-        }
+	    $model = new ContactForm();
+	        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+	           
+	        	if ($model->validate()) {
+	        	        						
+					$model->save();				
+	        	
+	        		return $this->render('thankyou');        	
+	        	}             
+	            
+	            return $this->refresh();
+	        } else {
+	            return $this->render('contact', [
+	                'model' => $model,
+	            ]);
+	        }
     }
 
+    public function actionServices()
+    {
+    	//return $this->render('index');
+    
+    	return $this->render('services');
+    }
+    
     public function actionAbout()
     {
         //return $this->render('about');
     	$model=new LoginForm();
     	
-    	$loginUser = new TkntUsers();
+    	//$loginUser = new TkntUsers();
     	
     	/*
  * @property integer $user_id
@@ -131,9 +190,9 @@ class SiteController extends Controller
  * @property string $dt_modified
     	 */
     	
-    	$loginUser->user_id = '';
-    	$loginUser->user_id = '';
-    	$loginUser->save();
+    	//$loginUser->user_id = '';
+    	//$loginUser->user_id = '';
+    	//$loginUser->save();
     	
         return $this->renderPartial('about',array('model'=>$model));
     }

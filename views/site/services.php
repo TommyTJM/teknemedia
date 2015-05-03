@@ -238,15 +238,14 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                      data-animspeed="1s"
                                      data-animdelay="0.2s"
                                      >
-                                    <h4 class="h4-body-title">
-                                        <i class="icon-ipad"></i>
-                                        <strong>CRM </strong> Development  
+                                     <h4 class="h4-body-title">
+                                        <i class="fa fa-film"></i>
+ 												<strong>Inventory Management </strong> System 
                                     </h4>
                                     <div class="content-box-text">
-                                       Teknet Media offers Microsoft Dynamics CRM user adoption for small business.
-                                        Our expert staff make the transition to Dynamics CRM a seamless process.
+									The process of managing and locating object or materials can be a tremendous effort.
+									We provide innovative solutions to handle your inventory. 
                                     </div>
-
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4"> 
@@ -257,15 +256,13 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                      data-animdelay="0.2s"
                                      >
                                     <h4 class="h4-body-title">
-                                        <i class="icon-settings"></i>
-                                         <strong>Sharepoint </strong> Development 
+                                        <i class="icon-ipad"></i>
+                                        <strong>Asset Tracking </strong> Solutions  
                                     </h4>
                                     <div class="content-box-text">
-                                     The logistic industry generate billions of document artifacts and quite often these documents are
-                                     printed on paper. SharePoint is a great tool to manage document workflow, archive those documents
-                                     and then use its search capacities to find the documents. 
+                                       Track your assets with our top of line RFID solution.
+                                       Record the location and usage of the assets and generate various reports.
                                     </div>
-
                                 </div>
                             </div>
                             <div class="col-md-4 col-sm-4"> 
@@ -287,14 +284,11 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
                                 </div>
                             </div>
-                           
-
-
                         </div>
                         <div class="space-sep40"></div>
 
                         <div class="row">
-                            <div class="col-md-4 col-sm-4"> 
+                        <div class="col-md-4 col-sm-4"> 
                                 <div class="content-box style5 small  animated"
                                      data-animtype="fadeIn"
                                      data-animrepeat="0"
@@ -302,13 +296,31 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                      data-animdelay="0.2s"
                                      >
                                     <h4 class="h4-body-title">
-                                        <i class="icon-eye"></i>
-                                        <strong>Custom </strong> Deveploment  
+                                        <i class="icon-ipad"></i>
+                                        <strong>CRM </strong> Solutions  
                                     </h4>
                                     <div class="content-box-text">
-                                        We solve business challenges using enterprise-level custom software development solutions. Our end-to-end software development services  
-                                        include expert strategic technology consulting and development all the way through to launch, production support and marketing.
+                                       Teknet Media offers Microsoft Dynamics CRM user adoption for small business.
+                                        Our expert staff make the transition to Dynamics CRM a seamless process.
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4"> 
+                                <div class="content-box style5 small  animated"
+                                     data-animtype="fadeIn"
+                                     data-animrepeat="0"
+                                     data-animspeed="1s"
+                                     data-animdelay="0.2s"
+                                     >
+                                       <h4 class="h4-body-title">
+		                                        <i class="icon-eye"></i>
+                                                <strong>Ad-hoc </strong> Reporting                                                
+                                            </h4>
+                                            <div class="content-box-text">
+                                                  Our ad-hoc reporting goal is to empower end-users to query company data, without IT 
+                                                  creating a myriad of reports.
+                                            </div> 
+                                    
                                 </div>
                             </div>                          
                             <div class="col-md-4 col-sm-4"> 
@@ -318,37 +330,16 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                      data-animspeed="1s"
                                      data-animdelay="0.2s"
                                      >
-                                    <h4 class="h4-body-title">
-                                        <i class="fa fa-film"></i>
- 												<strong>Inventory </strong> Management
+                                     <h4 class="h4-body-title">
+                                        <i class="icon-eye"></i>
+                                        <strong>Custom </strong> Deveploment  
                                     </h4>
                                     <div class="content-box-text">
-									The process of managing and locating object or materials can be a tremendous effort.
-									We provide innovative solutions to handle your inventory. 
+                                        We solve business challenges using enterprise-level custom software development solutions. Our end-to-end software development services  
+                                        include expert strategic technology consulting and development all the way through to launch, production support and marketing.
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-4"> 
-                                <div class="content-box style5 small  animated"
-                                     data-animtype="fadeIn"
-                                     data-animrepeat="0"
-                                     data-animspeed="1s"
-                                     data-animdelay="0.2s"
-                                     >
-                                    <h4 class="h4-body-title">
-                                        <i class="icon-lab"></i>
-                                        Government Contracting    
-                                    </h4>
-                                    <div class="content-box-text">
-									We provide technology services to the State of Florida.
-									We are certified Minority business enterprise in the state of Florida 
-                                   </div>
-
-                                </div>
-                            </div>
-
-
                         </div>         
                         <div class="space-sep40"></div>
                         

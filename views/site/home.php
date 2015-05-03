@@ -53,6 +53,19 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/respond.js"></script>
         <![endif]-->
+        <script>  !function(d,s,id){
+
+             var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+             
+            if(!d.getElementById(id)){
+                  js=d.createElement(s);
+                  js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                 fjs.parentNode.insertBefore(js,fjs);
+                }
+            }(document,"script","twitter-wjs");
+          
+		</script>
+        
     </head>
     <body>
     <?php $this->beginBody() ?>
@@ -81,7 +94,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             <a href="#" target="_blank" class="social-media-icon facebook-icon" data-original-title="facebook">facebook</a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" class="social-media-icon twitter-icon" data-original-title="twitter">twitter</a>
+                                            <a href="https://twitter.com/TeknetI" target="_blank" class="social-media-icon twitter-icon" data-original-title="twitter">twitter</a>
                                         </li>                                      
                                     </ul>
 
@@ -224,11 +237,11 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                      data-y="150"
                                      data-speed="300"
                                      data-start="800"
-                                     data-easing="easeOutCubic" data-end="6000" data-endspeed="500">Logistics Technology</div>
+                                     data-easing="easeOutCubic" data-end="6000" data-endspeed="500">IMS Technology</div>
 
 
                                 <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="200" data-start="1000" data-easing="easeOutBack" data-end="4500" data-endspeed="500">
-                                    We our leaders in logistics systems, let us meet your<br /> 
+                                    We our leaders in INVENTORY MANAGEMENT SYSTEM's let us meet your<br /> 
                                     supply chain needs!
                                 </div>
                                 <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="280" data-start="1500" data-easing="easeOutBack" data-end="5000" data-endspeed="500">
@@ -255,7 +268,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
 
 
                                 <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="200" data-start="1000" data-easing="easeOutBack" data-end="4500" data-endspeed="500">
-                                    Our world class experience gives your Warehouse<br />
+                                    Our world class WAREHOUSE MANAGEMENT SOLUTION gives your warehouse<br />
                                     the innovative edge! 
                                 </div>
                                 <div class="tp-caption slider-text-description sft str"  data-x="20" data-y="280" data-start="1500" data-easing="easeOutBack" data-end="5000" data-endspeed="500">
@@ -282,87 +295,49 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                 <div class="section-content top-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3 col-sm-3"> 
-                                <div class="content-box content-style4 medium animated"
-                                     data-animtype="fadeIn"
-                                     data-animrepeat="0"
-                                     data-animspeed="1s"
-                                     data-animdelay="0.2s"
-                                     >
+							<div class="col-md-3 col-sm-3"> 
+                                <div class="content-box content-style4 medium" >
                                     <h4 class="h4-body-title">
-                                        <i class="icon-settings-streamline"></i>
-                                        CRM Development
+                                        <i class="icon-paint-bucket-streamline"></i>
+                                        Inventory Management 
+                                    </h4>                                     
+									  <div class="content-box-text" style="text-align:center">   
+                                     </div>
+                                </div>
+                            </div>
+                                   
+							<div class="col-md-3 col-sm-3"> 
+                                <div class="content-box content-style4 medium" >
+                                    <h4 class="h4-body-title">
+                                        <i class="icon-paint-bucket-streamline"></i>
+                                        CRM Solutions
                                     </h4>
                                     <div class="content-box-text">
-									 Our CRM logistics solutions help service providers manage hundreds, if not thousands of customers,
-									 a large number of suppliers and support complex business processes for their customers.                                         <div>
-                                            <a href="#" class=" btn btn-sm">
-                                                <span>read more</span>
-                                            </a>
-                                        </div>
-
                                     </div>
+                                </div>
+                            </div>
+                                  
+							<div class="col-md-3 col-sm-3"> 
+                                <div class="content-box content-style4 medium" >
+                                    <h4 class="h4-body-title">
+                                        <i class="icon-paint-bucket-streamline"></i>
+                                        Ad-hoc Reporting
+                                    </h4>
+                                    
+		                                <div class="content-box-text">                                     
+		                                </div>                                                             
 
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-3"> 
-                                <div class="content-box content-style4 medium">
-                                <!-- 
-                                <div class="content-box content-style4 medium animated"
-                                     data-animtype="fadeIn"
-                                     data-animrepeat="0"
-                                     data-animspeed="1s"
-                                     data-animdelay="0.2s"
-                                     > 
-                                 -->                                    
-                                    <h4 class="h4-body-title">
-                                        <i class="icon-camera-streamline-video"></i>
-                                        Workflow Automation
-                                    </h4>
-                                    <div class="content-box-text">
-                                       Complex business models need automated process to ensure timely execution.
-                                       Automate your business process with our workflow solutions! 
-                                        <div>
-                                            <a href="#" class=" btn btn-sm">
-                                                <span>read more</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-3"> 
-                                <div class="content-box content-style4 medium animated"
-                                     data-animtype="fadeIn"
-                                     data-animrepeat="0"
-                                     data-animspeed="1s"
-                                     data-animdelay="0.2s"
-                                     >
-                                    <h4 class="h4-body-title">
-                                        <i class="icon-computer-imac"></i>
-                                        Custom Development
-                                    </h4>
-                                    <div class="content-box-text">
-									 Custom solutions provide companies with detailed execution of their business model.
-                                        <div>
-                                            <a href="#" class=" btn btn-sm">
-                                                <span>read more</span>
-                                            </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
+                                  
                             <div class="col-md-3 col-sm-3"> 
                                 <div class="content-box content-style4 medium" >
                                     <h4 class="h4-body-title">
                                         <i class="icon-paint-bucket-streamline"></i>
-                                        Government Contracting
-                                    </h4>
-                                    
-
+                                        Workflow Management
+                                    </h4>                                   
+									      <div class="content-box-text">
+		                                   </div>                         
                                 </div>
                             </div>
 
@@ -395,104 +370,44 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 <div class="portfolio-items">
 
                                     <!-- Portfolio Item -->
-                                    <div class="thumb-label-item animated seo"
-                                         data-animtype="fadeInUp"
-                                         data-animrepeat="0"
-                                         data-speed="1s"
-                                         data-delay="0.6s">
-                                        <div class="img-overlay thumb-label-item-img">
+                                    <div class="thumb-label-item" >
+
+                                        <div class="thumb-label-item-img">
                                             <img
                                                 src="<?php echo $imgLoc;?>images/placeholders/stock1.png"
                                                 alt=""/>
-
-                                            <div class="item-img-overlay">
-                                                <a class="portfolio-zoom fa fa-plus"
-                                                   href="<?php echo $imgLoc;?>images/placeholders/stock1.png"
-                                                    title="Title goes here"></a>
-
-                                                <div class="item_img_overlay_content">
-                                                   
-                                                </div>
-
-                                            </div>
                                         </div>
 
 
                                     </div>
                                     <!-- //Portfolio Item// -->
                                     <!-- Portfolio Item -->
-                                    <div class="thumb-label-item animated seo"
-                                         data-animtype="fadeInUp"
-                                         data-animrepeat="0"
-                                         data-speed="1s"
-                                         data-delay="0.8s">
-                                        <div class="img-overlay thumb-label-item-img">
+                                    <div class="thumb-label-item">
+                                       
+                                        <div class="thumb-label-item-img">
+                                            <img
+                                                src="<?php echo $imgLoc;?>images/placeholders/Stock8.png"
+                                                alt=""/>
+                                        </div>
+                                    </div>
+                                    <!-- //Portfolio Item// -->
+                                    <!-- Portfolio Item -->
+                                    <div class="thumb-label-item">
+                                       
+                                        <div class="thumb-label-item-img">
                                             <img
                                                 src="<?php echo $imgLoc;?>images/placeholders/Stock2.png"
                                                 alt=""/>
-
-                                            <div class="item-img-overlay">
-                                                <a class="portfolio-zoom fa fa-plus"
-                                                   href="<?php echo $imgLoc;?>images/placeholders/Stock2.png"
-                                                   data-rel="prettyPhoto[portfolio]" title="Title goes here"></a>
-
-                                                <div class="item_img_overlay_content">
-                                                  
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
+                                         </div>
                                     </div>
                                     <!-- //Portfolio Item// -->
                                     <!-- Portfolio Item -->
-                                    <div class="thumb-label-item animated seo"
-                                         data-animtype="fadeInUp"
-                                         data-animrepeat="0"
-                                         data-speed="1s"
-                                         data-delay="1s">
-                                        <div class="img-overlay thumb-label-item-img">
+                                    <div class="thumb-label-item animated branding">                                       
+                                        <div class="thumb-label-item-img">
                                             <img
-                                                src="<?php echo $imgLoc;?>images/placeholders/Stock5.png"
+                                                src="<?php echo $imgLoc;?>images/placeholders/Stock9.png"
                                                 alt=""/>
-
-                                            <div class="item-img-overlay">
-                                                <a class="portfolio-zoom fa fa-plus"
-                                                   href="<?php echo $imgLoc;?>images/placeholders/Stock5.png"
-                                                   data-rel="prettyPhoto[portfolio]" title="Title goes here"></a>
-
-                                                <div class="item_img_overlay_content">
-                                                    
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <!-- //Portfolio Item// -->
-                                    <!-- Portfolio Item -->
-                                    <div class="thumb-label-item animated branding"
-                                         data-animtype="fadeInUp"
-                                         data-animrepeat="0"
-                                         data-speed="1s"
-                                         data-delay="1.2s">
-                                        <div class="img-overlay thumb-label-item-img">
-                                            <img
-                                                src="<?php echo $imgLoc;?>images/placeholders/Stock4.png"
-                                                alt=""/>
-
-                                            <div class="item-img-overlay">
-                                                <a class="portfolio-zoom fa fa-plus"
-                                                   href="<?php echo $imgLoc;?>images/placeholders/Stock4.png"
-                                                   data-rel="prettyPhoto[portfolio]" title="Title goes here"></a>
-
-                                                <div class="item_img_overlay_content">
-                                                  
-
-                                            </div>
-                                        </div>
+                                     </div>
 
 
                                     </div>
@@ -531,7 +446,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                         <div class="section-subscribe animated" data-animtype="flipInX"
                                              data-animrepeat="0"
                                              data-speed="1s"
-                                             data-delay="0.5s">
+                                             data-delay="0.5s">                                         
+										    
                                              <?php echo Html::beginForm(); ?>
                                             	<form action="index" method="post">
                                             	    <?php echo Html::activeTextInput($model,'email', ['class' => 'subscribe-input text-input', 'placeholder' => 'Email..']) ?>
@@ -584,17 +500,18 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                              data-animspeed="1s"
                                              data-animdelay="0.2s"
                                              >
-                                            <h4 class="h4-body-title">
-                                                <strong>CRM </strong> Development            
+                                               <h4 class="h4-body-title">
+                                                <strong>Inventory </strong> Management            
 
-                                                <i class="icon-ipad"></i>
+                                                <i class="fa fa-film"></i>
                                             </h4>
                                             <div class="content-box-text">
                                                 <p> 
-                                                 CRM solutions help service providers manage customers,
-                                                 suppliers and support complex business processes.                                                  
+                                                 The process of managing and locating object or materials can be a tremendous effort.
+                                                 We provide innovative solutions to handle your inventory.                                                 
                                                 </p>
                                             </div>
+                                            
                                         </div>
                                     </li>
 
@@ -606,17 +523,14 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                              data-animspeed="1s"
                                              data-animdelay="0.2s"
                                              >
-                                            <h4 class="h4-body-title">
-                                                <strong>Sharepoint </strong> Development            
-
-                                                <i class="icon-settings"></i>
-                                            </h4>
-                                            <div class="content-box-text">
-                                                <p> 
-                                                  SharePoint is a great tool to manage document workflows, 
-                                                  archiving, editng and managing documents. Powerful search capacities help ensure finding documents faster.
-                                                </p>
-                                            </div>
+                                             <h4 class="h4-body-title">                                       
+                                       			 <strong>Asset Tracking </strong> Solutions  
+                                       			 <i class="icon-eye"></i>
+                                    		</h4>
+			                                    <div class="content-box-text">
+            			                           Track your assets with our top of line RFID solution.
+                        			               Record the location and usage of the assets and generate reports in real time.
+                                    			</div>
                                         </div>
                                     </li>
 
@@ -628,17 +542,15 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                              data-animspeed="1s"
                                              data-animdelay="0.2s"
                                              >
-                                            <h4 class="h4-body-title">
-                                                <strong>Workflow </strong> Management            
-
-                                                <i class="icon-painting-roll-streamline"></i>
+                                               <h4 class="h4-body-title">
+		                                        <i class="icon-eye"></i>
+                                                <strong>Ad-hoc </strong> Reporting                                                
                                             </h4>
                                             <div class="content-box-text">
-                                                <p> 
-                                                  Complex business models need automated process to ensure timely execution.
-                                                  Automate your business process with our workflow solutions!                                                 
-                                                </p>
-                                            </div>
+                                                  Our ad-hoc reporting goal is to empower end-users to query company data, without IT 
+                                                  creating a myriad of reports.
+                                            </div> 
+                                           
                                         </div>
                                     </li>
                                 </ul>
@@ -654,7 +566,52 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                              data-animspeed="1s"
                                              data-animdelay="0.2s"
                                              >
-                                            <h4 class="h4-body-title">
+                                             <h4 class="h4-body-title">
+                                                <strong>Customer Realtionship </strong> Management            
+
+                                                <i class="icon-ipad"></i>
+                                            </h4>
+                                            <div class="content-box-text">
+                                                <p> 
+                                                 CRM solutions help service providers manage customers,
+                                                 suppliers and support complex business processes.                                                  
+                                                </p>
+                                            </div>
+                                          
+                                        </div>
+                                    </li>
+                                    <li class="icon-content-single">
+
+                                        <div class="content-box  style5  animated "
+                                             data-animtype="fadeIn"
+                                             data-animrepeat="0"
+                                             data-animspeed="1s"
+                                             data-animdelay="0.2s"
+                                             >
+                                              <h4 class="h4-body-title">
+                                                <strong>Workflow </strong> Management            
+
+                                                <i class="icon-painting-roll-streamline"></i>
+                                            </h4>
+                                            <div class="content-box-text">
+                                                <p> 
+                                                  Complex business models need automated process to ensure timely execution.
+                                                  Automate your business process with our workflow solutions!                                                 
+                                                </p>
+                                            </div>
+                                           
+                                        </div>
+                                    </li>
+
+                                    <li class="icon-content-single">
+
+                                        <div class="content-box  style5  animated "
+                                             data-animtype="fadeIn"
+                                             data-animrepeat="0"
+                                             data-animspeed="1s"
+                                             data-animdelay="0.2s"
+                                             >
+                                             <h4 class="h4-body-title">
                                                 <strong>Custom </strong> Deveploment            
 
                                                 <i class="icon-eye"></i>
@@ -662,49 +619,6 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             <div class="content-box-text">
                                                 <p> 
 												Custom solutions provide companies with detailed execution of their business model.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="icon-content-single">
-
-                                        <div class="content-box  style5  animated "
-                                             data-animtype="fadeIn"
-                                             data-animrepeat="0"
-                                             data-animspeed="1s"
-                                             data-animdelay="0.2s"
-                                             >
-                                            <h4 class="h4-body-title">
-                                                <strong>Inventory </strong> Management            
-
-                                                <i class="fa fa-film"></i>
-                                            </h4>
-                                            <div class="content-box-text">
-                                                <p> 
-                                                 The process of managing and locating object or materials can be a tremendous effort.
-                                                 We provide innovative solutions to handle your inventory.                                                 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li class="icon-content-single">
-
-                                        <div class="content-box  style5  animated "
-                                             data-animtype="fadeIn"
-                                             data-animrepeat="0"
-                                             data-animspeed="1s"
-                                             data-animdelay="0.2s"
-                                             >
-                                            <h4 class="h4-body-title">
-                                                <strong>Government </strong> Contracting            
-
-                                                <i class="icon-lab"></i>
-                                            </h4>
-                                            <div class="content-box-text">
-                                                <p> 
-												We provide technology services to the State of Florida.
-												We are certified Minority business enterprise in the state of Florida.
                                                 </p>
                                             </div>
                                         </div>
@@ -760,22 +674,14 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 <!-- //Footer Col.// -->
 
 
+
                                 <!-- Footer Col. -->
                                 <div class="col-md-3 col-sm-3 footer-col">
                                     <div class="footer-title">
                                         Recent Tweets
                                     </div>
                                     <div class="footer-content footer-recent-tweets-container">
-                                        <ul class="tweetList footer-recent-tweets">
-                                            <li class="tweet_content item">
-                                                <p>Grab a copy of the popular Boomerang theme for $10 until its next release! </p>
-                                                <p class="timestamp">2 days ago</p>
-                                            </li>
-                                            <li class="tweet_content item">
-                                                <p>Newest Blog Awesome post: Stacking Text and Icons <a href="http://t.co/1qRP8K1wjG">Check it</a></p>
-                                                <p class="timestamp">4 days ago</p>
-                                            </li>
-                                        </ul>
+                              			<a class="twitter-timeline" href="https://twitter.com/TeknetI" data-widget-id="594938586790764544">Tweets by @TeknetI</a>
                                     </div>
                                 </div>
                                 <!-- //Footer Col.// -->

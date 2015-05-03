@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
 use  yii\helpers\BaseHtml;
 use app\assets\HomeAsset;
 
@@ -216,14 +217,17 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                     </p>
                                     
                                     <div class="form">
-							<?php echo Html::beginForm(); ?>
-							
-								<?php echo Html::errorSummary( $model ); ?>
                                     
-                                    <form class="form-wrapper" id="contactform" method="post" role="form" novalidate>
-
-
-                                        <div class="form-group">
+                                     <?php $form = ActiveForm::begin([
+										        'id' => 'contact-form',
+										        'options' => ['class' => 'form-wrapper'],
+										        'fieldConfig' => [
+										            'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
+										            'labelOptions' => ['class' => 'col-lg-1 control-label'],
+										        ],
+										    ]); ?>
+                                    
+                                    <div class="form-group">
                                             <div class="row">
                                                 <div class="col-xs-7">
                                                     <label for="name">
@@ -274,8 +278,8 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                             </div>
                                         </div>
 
-                                   </form>
-                                   <?php echo Html::endForm(); ?>
+                                 
+                                   <?php ActiveForm::end(); ?>
 								</div><!-- form -->
                                 </div>
                             </div>
