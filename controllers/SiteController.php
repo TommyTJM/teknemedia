@@ -52,8 +52,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        //return $this->render('index');
-        
+              
        $loginmodel = new LoginForm();
 
        if($loginmodel->load(Yii::$app->request->post())) {

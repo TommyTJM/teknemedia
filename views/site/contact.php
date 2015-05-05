@@ -43,6 +43,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         
         <link href="/teknetmediabeta/web/home/css/skins/light-blue.css" rel='stylesheet' type='text/css' id="skin-file">                      
 
+        
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 
         <!-- Fonts -->

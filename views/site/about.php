@@ -32,6 +32,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         <![endif]-->
         <link rel="icon" type="image/png" href="<?php echo $imgLoc;?>images/favicon.ico" sizes="32x32" />
 
+        
         <meta name="description" content="Teknetmedia Inc.">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
