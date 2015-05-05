@@ -57,8 +57,6 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
     <body>
     <?php $this->beginBody() ?>
 
-
-
         <div id="wrapper"  >
 
             <div class="top_wrapper">
@@ -216,7 +214,7 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                         Leave A Message
                                     </h3>
                                     <p class="body_paragraph contact-paragraph">
-                                        Teknet Media prides itself on being responsive to customers, prospects, and partners. Please provide the details below and a knowledgeable representative will contact you shortly.
+                                        Teknet Media prides itself on being responsive to  prospects, and partners. Please provide the details below and a knowledgeable representative will contact you shortly.
                                     </p>
                                     
                                     <div class="form">
