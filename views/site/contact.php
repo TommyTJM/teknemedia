@@ -53,6 +53,19 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
         <!--[if lt IE 9]>
         <script type="text/javascript" src="js/respond.js"></script>
         <![endif]-->
+         <script>  !function(d,s,id){
+
+             var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+             
+            if(!d.getElementById(id)){
+                  js=d.createElement(s);
+                  js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                 fjs.parentNode.insertBefore(js,fjs);
+                }
+            }(document,"script","twitter-wjs");
+          
+		</script>
+        
     </head>
     <body>
     <?php $this->beginBody() ?>
@@ -340,22 +353,14 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                 <!-- //Footer Col.// -->
 
 
+
                                 <!-- Footer Col. -->
                                 <div class="col-md-3 col-sm-3 footer-col">
                                     <div class="footer-title">
                                         Recent Tweets
                                     </div>
                                     <div class="footer-content footer-recent-tweets-container">
-                                        <ul class="tweetList footer-recent-tweets">
-                                            <li class="tweet_content item">
-                                                <p>Grab a copy of the popular Boomerang theme for $10 until its next release! </p>
-                                                <p class="timestamp">2 days ago</p>
-                                            </li>
-                                            <li class="tweet_content item">
-                                                <p>Newest Blog Awesome post: Stacking Text and Icons <a href="http://t.co/1qRP8K1wjG">Check it</a></p>
-                                                <p class="timestamp">4 days ago</p>
-                                            </li>
-                                        </ul>
+                              			<a class="twitter-timeline" href="https://twitter.com/TeknetI" data-widget-id="594938586790764544">Tweets by @TeknetI</a>
                                     </div>
                                 </div>
                                 <!-- //Footer Col.// -->
@@ -368,27 +373,21 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                     </div>
                                     <div class="footer-content">
                                         <ul class="footer-category-list">
-                                            <li>
-                                                <a href="">Lorem Ipsum</a>
+                                         	<li>
+                                                <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/about">About Us</a>
                                             </li>
                                             <li>
-                                                <a href="">Dolor Sit Amet</a>
+                                                 <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/services">Servies</a>
                                             </li>
                                             <li>
-                                                <a href="">Nullam dignissim</a>
+                                                <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/contact">Contact Us</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="http://www.logisticsit.com/">Logistics IT Magazine</a>
                                             </li>
                                             <li>
-                                                <a href="">Lorem Ipsum</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Lorem Ipsum</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Dolor Sit Amet</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Dolor Sit Amet</a>
-                                            </li>
+                                                <a href="http://www.enterpriseflorida.com/industries/logistics-distribution/">Florida Logistics</a>
+                                            </li>                                                                                     
                                         </ul>
                                     </div>
                                 </div>

@@ -695,27 +695,21 @@ $imgLoc = $hmBundle->baseUrl.'/home/';
                                     </div>
                                     <div class="footer-content">
                                         <ul class="footer-category-list">
-                                            <li>
-                                                <a href="">Lorem Ipsum</a>
+                                         	<li>
+                                                <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/about">About Us</a>
                                             </li>
                                             <li>
-                                                <a href="">Dolor Sit Amet</a>
+                                                 <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/services">Servies</a>
                                             </li>
                                             <li>
-                                                <a href="">Nullam dignissim</a>
+                                                <a href="<?php echo Yii::$app->request->baseUrl; ?>/index.php?r=site/contact">Contact Us</a>
+                                            </li>                                             
+                                            <li>
+                                                <a href="http://www.logisticsit.com/">Logistics IT Magazine</a>
                                             </li>
                                             <li>
-                                                <a href="">Lorem Ipsum</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Lorem Ipsum</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Dolor Sit Amet</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Dolor Sit Amet</a>
-                                            </li>
+                                                <a href="http://www.enterpriseflorida.com/industries/logistics-distribution/">Florida Logistics</a>
+                                            </li>                                                                                     
                                         </ul>
                                     </div>
                                 </div>
